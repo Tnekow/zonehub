@@ -1,0 +1,34 @@
+{
+  "seo": {
+    "homeTitle": "ZoneHub – Free Steam Profile Preview & Design Tool",
+    "homeDescription": "ZoneHub is a free Steam profile preview and design tool that does not consume any Steam points. Preview your Steam profile layout, customize backgrounds and official themes, configure multiple showcase layouts, and generate artwork GIFs before publishing.",
+    "homeH1": "ZoneHub Steam Profile Preview & Design Tool"
+  },
+  "banner": {
+    "mainTitle": "Preview & Design Your Steam Profile Before Publishing",
+    "subtitle": "Test artwork, showcase, and profile layout in real-time",
+    "demoPlaceholder": {
+      "title": "Demo GIF/Video (5-8s, no sound)",
+      "subtitle": "Demo GIF/Video (5-8s, no sound)"
+    },
+    "buttons": {
+      "startEditing": "Start Editing",
+      "viewTutorial": "View Tutorial"
+    },
+    "closeLabel": "Close",
+    "newHome": {
+      "tip": "We have a brand-new homepage! Want to try it?",
+      "tryNew": "Try New Homepage",
+      "keepClassic": "Keep Classic"
+    }
+  },
+  "languageSelection": {
+    "title": "Choose Your Language",
+    "subtitle": "选择你的语言"
+  },
+  "tips": {
+    "avatar": "Click to change avatar",
+    "artwork": "Upload your Artwork",
+    "background": "Set personal background"
+  }
+} 

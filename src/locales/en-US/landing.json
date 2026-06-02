@@ -1,0 +1,20 @@
+{
+  "topBar": {
+    "viewing": "You are viewing the new homepage.",
+    "switchBack": "Switch back to classic editor"
+  },
+  "hero": {
+    "badge": "Offline Steam profile editor",
+    "title1": "Design your Steam profile locally,",
+    "title2": "with configs stored in your browser.",
+    "subtitle": "High-fidelity Steam profile layout, local editing, export, and custom backgrounds (https / blob / data URLs).",
+    "openEditor": "Open Editor",
+    "noInstall": "No sign-in or install required. Start editing immediately; configs stay on this device."
+  },
+  "tutorials": {
+    "title": "Guides & tutorials",
+    "desc": "Getting started links and curated reads (read-only, no creator center).",
+    "readMore": "Read more",
+    "empty": "No guides yet"
+  }
+}

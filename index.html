@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="apple-touch-icon" href="/logo.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steam Profile Customizer - Create Amazing Steam Profiles | SteamZone</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Free Steam profile customizer. Create stunning Steam profiles: customize themes, avatars, badges, backgrounds. Steam profile editor and theme generator for gamers. Customize Steam profile online." />
+    <meta name="keywords" content="steam profile customizer, Steam profile editor, Steam profile themes, Steam profile generator, customize Steam profile, Steam profile customization, free Steam profile editor, gaming profile, Steam avatar, Steam badges, Steam background, Steam theme editor" />
+    <meta name="author" content="SteamZone" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.steamzone.site/" />
+
+    <!-- hreflang alternates -->
+    <link rel="alternate" hreflang="zh-CN" href="https://www.steamzone.site/" />
+    <link rel="alternate" hreflang="en" href="https://www.steamzone.site/en" />
+    <link rel="alternate" hreflang="x-default" href="https://www.steamzone.site/" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Steam Profile Customizer - Create Amazing Steam Profiles | SteamZone" />
+    <meta property="og:description" content="Free Steam profile customizer. Create stunning Steam profiles: customize themes, avatars, badges, backgrounds. Steam profile editor and theme generator for gamers." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.steamzone.site/" />
+    <meta property="og:image" content="https://www.steamzone.site/logo.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="SteamZone" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="zh_CN" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Steam Profile Customizer - Create Amazing Steam Profiles | SteamZone" />
+    <meta name="twitter:description" content="Free Steam profile customizer. Create stunning Steam profiles: customize themes, avatars, badges, backgrounds. Steam profile editor and theme generator for gamers." />
+    <meta name="twitter:image" content="https://www.steamzone.site/logo.png" />
+    <meta name="twitter:site" content="@steamzone" />
+    
+    <!-- Additional Meta Tags -->
+    <meta name="theme-color" content="#171a21" />
+    <meta name="msapplication-TileColor" content="#171a21" />
+    <meta name="application-name" content="SteamZone" />
+    
+    <!-- ZCOOL KuaiLe font is self-hosted via @fontsource/zcool-kuaile (imported in main.tsx) -->
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Steam Profile Customizer",
+      "alternateName": ["SteamZone", "Steam Profile Editor", "Steam Profile Theme Generator"],
+      "description": "Free Steam profile customizer. Create stunning Steam profiles: customize themes, avatars, badges, backgrounds. Steam profile editor and theme generator for gamers.",
+      "url": "https://www.steamzone.site/",
+      "applicationCategory": "Game",
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "SteamZone"
+      },
+      "featureList": [
+        "Steam Profile Customization",
+        "Steam Profile Themes",
+        "Steam Profile Editor",
+        "Steam Profile Generator",
+        "Video Backgrounds",
+        "Avatar Editor",
+        "Badge Customization",
+        "Background Themes"
+      ],
+      "keywords": "steam profile customizer, Steam profile editor, Steam profile themes, customize Steam profile, free Steam profile editor"
+    }
+    </script>
+
+    <!-- Dynamic Canonical & Hreflang (SPA friendly) -->
+    <script>
+      (function() {
+        try {
+          const { origin } = window.location;
+          // normalize path: remove trailing slash except root
+          const normalize = (p) => (p !== '/' && p.endsWith('/') ? p.slice(0, -1) : p);
+          const rawPath = window.location.pathname;
+          const path = normalize(rawPath);
+          const isEn = path === '/en' || path.startsWith('/en/');
+          const zhPath = normalize(isEn ? path.replace(/^\/en/, '') || '/' : path);
+          const enPath = normalize(isEn ? path : (path === '/' ? '/en' : '/en' + path));
+
+          // update canonical
+          let canonical = document.querySelector('link[rel="canonical"]');
+          if (!canonical) {
+            canonical = document.createElement('link');
+            canonical.setAttribute('rel', 'canonical');
+            document.head.appendChild(canonical);
+          }
+          canonical.setAttribute('href', origin + path);
+
+          // update hreflang alternates
+          const ensureAlt = (lang, href) => {
+            let el = document.querySelector(`link[rel="alternate"][hreflang="${lang}"]`);
+            if (!el) {
+              el = document.createElement('link');
+              el.setAttribute('rel', 'alternate');
+              el.setAttribute('hreflang', lang);
+              document.head.appendChild(el);
+            }
+            el.setAttribute('href', origin + href);
+          };
+          ensureAlt('zh-CN', zhPath);
+          ensureAlt('en', enPath);
+          // x-default 指向中文版本或根路径
+          ensureAlt('x-default', zhPath);
+        } catch (e) {
+          console.warn('Failed to update canonical/hreflang:', e);
+        }
+      })();
+    </script>
+    
+    <!-- COI Service Worker: 仅 video-to-gif 页面需要，按需加载 -->
+    <script>
+      (function() {
+        var needIsolation = /artwork-showcase\/video-to-gif/.test(location.pathname);
+        if (needIsolation) {
+          window.coi = {
+            shouldRegister: function() { return true; },
+            shouldDeregister: function() { return false; },
+            coepCredentialless: function() { return true; },
+            coepDegrade: function() { return false; },
+            quiet: false,
+          };
+          var s = document.createElement('script');
+          s.src = '/coi-serviceworker.min.js';
+          document.head.appendChild(s);
+        } else if (navigator.serviceWorker) {
+          navigator.serviceWorker.getRegistrations().then(function(regs) {
+            regs.forEach(function(r) {
+              if (r.active && r.active.scriptURL.includes('coi-serviceworker')) r.unregister();
+            });
+          });
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

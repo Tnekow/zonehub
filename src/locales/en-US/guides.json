@@ -1,0 +1,211 @@
+{
+  "title": "Steam Guides",
+  "subtitle": "Steam Community Guides and Tutorials",
+  "description": "Curated Steam community guides to help you better use Steam's various features",
+  "categories": {
+    "all": "All",
+    "messageBoard": "Message Board",
+    "badges": "Badges",
+    "profile": "Profile",
+    "artwork": "Artwork",
+    "inventory": "Inventory Management",
+    "social": "Social Features",
+    "workshop": "Workshop",
+    "market": "Market Trading",
+    "screenshots": "Screenshots & Videos",
+    "security": "Account Security"
+  },
+  "difficulties": {
+    "all": "All Difficulties",
+    "beginner": "Beginner",
+    "intermediate": "Intermediate",
+    "advanced": "Advanced"
+  },
+  "filters": {
+    "title": "Filter Guides",
+    "category": "Category",
+    "difficulty": "Difficulty",
+    "rating": "Rating",
+    "downloads": "Downloads",
+    "date": "Date",
+    "author": "Author",
+    "tags": "Tags",
+    "clear": "Clear Filters",
+    "apply": "Apply Filters"
+  },
+  "sort": {
+    "title": "Sort",
+    "default": "Default",
+    "newest": "Newest",
+    "oldest": "Oldest",
+    "rating": "Rating",
+    "downloads": "Downloads",
+    "views": "Views",
+    "likes": "Likes",
+    "comments": "Comments",
+    "title": "Title",
+    "author": "Author"
+  },
+  "search": {
+    "placeholder": "Search guides...",
+    "noResults": "No guides found",
+    "tryDifferentKeywords": "Try different keywords",
+    "searchInGuides": "Search in guides"
+  },
+  "guide": {
+    "title": "Guide Title",
+    "description": "Guide Description",
+    "category": "Category",
+    "difficulty": "Difficulty",
+    "author": "Author",
+    "date": "Published Date",
+    "rating": "Rating",
+    "downloads": "Downloads",
+    "views": "Views",
+    "likes": "Likes",
+    "comments": "Comments",
+    "tags": "Tags",
+    "content": "Content",
+    "url": "URL",
+    "steamId": "Steam Workshop ID",
+    "imageUrl": "Preview Image",
+    "readMore": "Read More",
+    "viewOnSteam": "View on Steam",
+    "download": "Download",
+    "like": "Like",
+    "unlike": "Unlike",
+    "share": "Share",
+    "report": "Report",
+    "edit": "Edit",
+    "delete": "Delete"
+  },
+  "actions": {
+    "createGuide": "Create Guide",
+    "editGuide": "Edit Guide",
+    "deleteGuide": "Delete Guide",
+    "publishGuide": "Publish Guide",
+    "draftGuide": "Save Draft",
+    "previewGuide": "Preview Guide",
+    "shareGuide": "Share Guide",
+    "reportGuide": "Report Guide",
+    "followAuthor": "Follow Author",
+    "unfollowAuthor": "Unfollow Author",
+    "viewAuthorProfile": "View Author Profile",
+    "viewAllGuides": "View All Guides",
+    "viewCategoryGuides": "View {{category}} Guides",
+    "viewAuthorGuides": "View {{author}}'s Guides"
+  },
+  "stats": {
+    "totalGuides": "Total Guides",
+    "totalDownloads": "Total Downloads",
+    "totalViews": "Total Views",
+    "totalLikes": "Total Likes",
+    "totalComments": "Total Comments",
+    "averageRating": "Average Rating",
+    "topCategory": "Top Category",
+    "topAuthor": "Top Author",
+    "recentGuides": "Recent Guides",
+    "popularGuides": "Popular Guides",
+    "trendingGuides": "Trending Guides"
+  },
+  "messages": {
+    "guideCreated": "Guide created successfully",
+    "guideUpdated": "Guide updated successfully",
+    "guideDeleted": "Guide deleted successfully",
+    "guidePublished": "Guide published successfully",
+    "guideLiked": "Guide liked successfully",
+    "guideUnliked": "Guide unliked successfully",
+    "guideShared": "Guide shared successfully",
+    "guideReported": "Guide reported successfully",
+    "errorCreatingGuide": "Failed to create guide",
+    "errorUpdatingGuide": "Failed to update guide",
+    "errorDeletingGuide": "Failed to delete guide",
+    "errorPublishingGuide": "Failed to publish guide",
+    "errorLikingGuide": "Failed to like guide",
+    "errorSharingGuide": "Failed to share guide",
+    "errorReportingGuide": "Failed to report guide",
+    "confirmDelete": "Are you sure you want to delete this guide?",
+    "confirmReport": "Are you sure you want to report this guide?",
+    "guideNotFound": "Guide not found",
+    "accessDenied": "Access denied",
+    "invalidGuide": "Invalid guide"
+  },
+  "sampleGuides": {
+    "moePointArt": {
+      "title": "Moe Point Art Collection!!! (MOE point art!!!)",
+      "description": "Beautiful moe point art collection, including various cute pixel art works, suitable for Steam profile decoration",
+      "category": "Message Board",
+      "difficulty": "Beginner",
+      "tags": {
+        "moe": "Moe",
+        "pointArt": "Point Art",
+        "pixelArt": "Pixel Art",
+        "cute": "Cute"
+      },
+      "author": "H.T River",
+      "date": "2024-03-27",
+      "rating": 4.6,
+      "downloads": 15000
+    },
+    "steamBadges": {
+      "title": "Steam Badges Collection",
+      "description": "Complete Steam badge collection guide, including rare badge acquisition methods and collection tips",
+      "category": "Badges",
+      "difficulty": "Advanced",
+      "tags": {
+        "badges": "Badges",
+        "collection": "Collection",
+        "rare": "Rare",
+        "achievements": "Achievements"
+      },
+      "author": "Badge Hunter",
+      "date": "2024-01-08",
+      "rating": 4.6,
+      "downloads": 25000
+    },
+    "allColorsSteamThemes": {
+      "title": "All Colors Steam Themes [2025 UPDATED]",
+      "description": "Comprehensive collection of Steam profile themes in various colors and styles, including free and premium themes to make your profile outstanding",
+      "category": "Profile",
+      "difficulty": "Beginner",
+      "tags": {
+        "themes": "Themes",
+        "profile": "Profile",
+        "customization": "Customization",
+        "colors": "Colors"
+      },
+      "author": "Tornado - profile animations",
+      "date": "2025-02-19",
+      "rating": 4.6,
+      "downloads": 37074
+    },
+    "naviSteamCheckLog": {
+      "title": "Navi's Steam Inspection Log",
+      "description": "This guide mainly organizes badges and backgrounds, and also includes avatar frames and animated avatars, sets of achievement combinations, and other beautification tutorials. Avatar, 500+ Steam badges, Achievements, Background…",
+      "author": "देव-Deva",
+      "rating": 4.6,
+      "downloads": 22000
+    },
+    "devaGuides": {
+      "title": "देव-Deva's Guides",
+      "description": "Curated themes/artists/games/special profiles from Steam guide creator देव-Deva",
+      "author": "देव-Deva",
+      "rating": 4.6,
+      "downloads": 18000
+    },
+    "profileBeautifyTips": {
+      "title": "Profile Beautification — Tips, Tools, Resources",
+      "description": "Collected common questions from players who want to beautify their profiles and provides solutions. For reference only.",
+      "author": "call",
+      "date": "2025-10-29",
+      "rating": 4.6,
+      "downloads": 12000
+    },
+    "nasgeWysiwygGuide": {
+      "title": "Edit Guides and Reviews in a What-You-See-Is-What-You-Get Way",
+      "description": "A visual editor for Steam guides and reviews with WYSIWYG editing, theme switching, image pool management, content sync, and import/export support.",
+      "author": "Jinghuo and kaikisen",
+      "date": "2025-12-31"
+    }
+  }
+}

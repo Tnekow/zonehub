@@ -1,0 +1,36 @@
+import { CopyCodeBlock } from '../../components/mdx/CopyCodeBlock';
+
+export const stepTitle = 'Step 4: Steam Workshop Upload Tutorial';
+
+const anonymousCode = `v_trim=_=>{return _},$J('#title').val(' \\n'+Array.from(Array(126),_=>'\\t').join(''));`;
+const artworkCode = `$J('#ConsumerAppID').val(480),$J('[name=file_type]').val(0),$J('[name=visibility]').val(0);`;
+
+<div className="space-y-6 not-prose">
+  <div className="p-4 bg-blue-900/20 border border-blue-500/30 rounded">
+    <p className="text-blue-400 text-sm font-medium mb-2">📋 Upload Steps</p>
+    <ol className="text-blue-300 text-sm space-y-2 list-decimal list-inside">
+      <li>Visit the <a href="https://steamcommunity.com/sharedfiles/edititem/767/3/" className="text-blue-200 underline hover:text-blue-100">Steam Workshop Edit Page</a></li>
+      <li>Press F12 to open Developer Tools</li>
+      <li>Execute the following codes in the console in sequence</li>
+    </ol>
+  </div>
+
+  <div className="space-y-2">
+    <h4 className="text-steam-textPrimary font-medium">🎭 Anonymous Code (Hide Artwork Title)</h4>
+    <CopyCodeBlock label="Anonymous code" code={anonymousCode} copyLabel="Copy" copiedLabel="Copied" />
+    <p className="text-steam-textMuted text-xs">After running this, the artwork title will be hidden</p>
+  </div>
+
+  <div className="space-y-2">
+    <h4 className="text-steam-textPrimary font-medium">🎨 Artwork Code (Set Dimensions)</h4>
+    <CopyCodeBlock label="Artwork code" code={artworkCode} copyLabel="Copy" copiedLabel="Copied" />
+    <p className="text-steam-textMuted text-xs">Sets width to 1000px and height to 1px for horizontal scroll effect</p>
+  </div>
+
+  <div className="p-4 bg-green-900/20 border border-green-500/30 rounded">
+    <p className="text-green-400 text-sm font-medium mb-2">✅ Done</p>
+    <p className="text-green-300 text-sm">
+      After running the codes, upload your five-split GIF files to display them as artwork on your Steam profile!
+    </p>
+  </div>
+</div>

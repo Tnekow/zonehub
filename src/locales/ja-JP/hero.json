@@ -1,0 +1,34 @@
+{
+  "seo": {
+    "homeTitle": "ZoneHub - 無料 Steam プロフィールプレビュー＆デザインツール",
+    "homeDescription": "ZoneHub は無料の Steam プロフィールプレビュー＆デザインツールです。背景のカスタマイズ、複数の公式テーマ、複数のショーケースレイアウトのプレビュー、アートワーク GIF 生成をサポートし、Steam に公開する前にプロフィールの完成形を確認できます。",
+    "homeH1": "ZoneHub Steam プロフィールプレビュー＆デザインツール"
+  },
+  "banner": {
+    "mainTitle": "Steam プロフィールをプレビュー＆デザイン",
+    "subtitle": "アートワーク、ショーケース、プロフィールレイアウトをリアルタイムでテスト",
+    "demoPlaceholder": {
+      "title": "デモ GIF/動画（5〜8秒、無音）",
+      "subtitle": "Demo GIF/Video (5-8s, no sound)"
+    },
+    "buttons": {
+      "startEditing": "編集を開始",
+      "viewTutorial": "チュートリアルを見る"
+    },
+    "closeLabel": "閉じる",
+    "newHome": {
+      "tip": "新しいホームページが登場しました。試してみますか？",
+      "tryNew": "新ホームを試す",
+      "keepClassic": "クラシックのまま"
+    }
+  },
+  "languageSelection": {
+    "title": "言語を選択",
+    "subtitle": "Select your language"
+  },
+  "tips": {
+    "avatar": "クリックでアバターを変更",
+    "artwork": "アートワークをアップロード",
+    "background": "個人用背景を設定"
+  }
+}

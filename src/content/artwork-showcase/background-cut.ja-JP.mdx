@@ -1,0 +1,45 @@
+import { CopyCodeBlock } from '../../components/mdx/CopyCodeBlock';
+
+export const pageTitle = '背景のみ切り抜き - チュートリアル';
+
+const artworkCode = `var num= document.getElementsByName("image_width")[0].value;
+document.getElementsByName("image_height")[0].value = num-(num-1);
+document.getElementsByName("image_width")[0].value= num*100;`;
+
+const screenshotCode = `document.getElementsByName("file_type")[0].value= 5;
+var num= document.getElementsByName("image_width")[0].value;
+document.getElementsByName("image_height")[0].value = num-(num-1);
+document.getElementsByName("image_width")[0].value= num*100;`;
+
+<div className="bg-steam-item rounded p-6 mb-6 not-prose">
+  <h2 className="text-xl font-semibold text-steam-textPrimary mb-4">Steam 背景の自動切り抜きチュートリアル</h2>
+
+  <ol className="list-decimal list-inside space-y-3 ml-4 text-steam-textMuted">
+    <li>インベントリ（プロフィール → インベントリ）で背景を選び、「フルサイズで表示」をクリックして URL をコピー</li>
+    <li>
+      <a href="https://steam.design">steam.design</a> に URL を貼り付け、「change BG」でプレビューし、「Download BG」で 3 枚の切り抜き画像をダウンロード
+    </li>
+    <li>解凍してアバター、メイン（Artwork_Middle）、サブ（Artwork_Right_Top）を取得。ショーケースにはメインとサブが必要</li>
+    <li>
+      <a href="https://steamcommunity.com/sharedfiles/edititem/767/3/">Steam アートワークアップロード</a> を開き、メイン画像を選択して右クリック → 「検証」
+    </li>
+    <li>
+      「Console」を開き、以下のコードを貼り付け（デフォルトはアートワークショーケース）：
+      <CopyCodeBlock label="アートワークショーケース用コード" code={artworkCode} copyLabel="コードをコピー" copiedLabel="コピーしました" />
+      <CopyCodeBlock label="スクリーンショットショーケース用コード" code={screenshotCode} copyLabel="コードをコピー" copiedLabel="コピーしました" />
+      <p className="text-sm mt-2">成功するとコンソールに 0 以外の値が返ります（値は一意ではありません）</p>
+    </li>
+    <li>コンソールを閉じ、アップロードページで「保存して続行」を選択</li>
+    <li>残りの画像をアップロードし、プロフィールで背景を設定、最初のショーケースを「イラストショーケース」にしてメイン/サブを選択</li>
+  </ol>
+
+  <div className="bg-steam-item-in rounded p-4 mt-6">
+    <h4 className="text-steam-textPrimary font-medium mb-2">注意事項</h4>
+    <ul className="list-disc list-inside space-y-1 text-sm text-steam-textMuted">
+      <li>コードの種類を正しく使い分けてください（イラスト vs スクリーンショット）</li>
+      <li>成功時は 0 以外の値が返ります</li>
+      <li>アップロード後に必ず保存して続行してください</li>
+      <li>プロフィールページでショーケース種類を正しく設定してください</li>
+    </ul>
+  </div>
+</div>

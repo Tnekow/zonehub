@@ -1,0 +1,34 @@
+{
+  "seo": {
+    "homeTitle": "ZoneHub - 免费 Steam 个人资料预览与设计工具（不消耗点数）",
+    "homeDescription": "ZoneHub 是一款免费的 Steam 个人资料预览与设计工具，不消耗任何点数。支持自定义背景、多种官方主题、多种展柜布局预览，以及艺术作品 GIF 生成工具，帮助你在发布到 Steam 之前完整预览个人主页效果。",
+    "homeH1": "ZoneHub Steam 个人资料预览与设计工具"
+  },
+  "banner": {
+    "mainTitle": "预览并设计你的 Steam 个人资料页面",
+    "subtitle": "实时测试作品展示、个人资料布局和自定义效果",
+    "demoPlaceholder": {
+      "title": "演示 GIF/视频 (5-8秒，无声音)",
+      "subtitle": "Demo GIF/Video (5-8s, no sound)"
+    },
+    "buttons": {
+      "startEditing": "开始编辑",
+      "viewTutorial": "查看教程"
+    },
+    "closeLabel": "关闭",
+    "newHome": {
+      "tip": "全新首页已上线，要体验一下吗？",
+      "tryNew": "试试新首页",
+      "keepClassic": "保持经典"
+    }
+  },
+  "languageSelection": {
+    "title": "选择你的语言",
+    "subtitle": "Choose Your Language"
+  },
+  "tips": {
+    "avatar": "点我换头像",
+    "artwork": "上传你的 Artwork",
+    "background": "设置个人背景"
+  }
+} 

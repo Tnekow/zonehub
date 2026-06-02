@@ -1,0 +1,45 @@
+import { CopyCodeBlock } from '../../components/mdx/CopyCodeBlock';
+
+export const pageTitle = 'Background Cut Only - Tutorial';
+
+const artworkCode = `var num= document.getElementsByName("image_width")[0].value;
+document.getElementsByName("image_height")[0].value = num-(num-1);
+document.getElementsByName("image_width")[0].value= num*100;`;
+
+const screenshotCode = `document.getElementsByName("file_type")[0].value= 5;
+var num= document.getElementsByName("image_width")[0].value;
+document.getElementsByName("image_height")[0].value = num-(num-1);
+document.getElementsByName("image_width")[0].value= num*100;`;
+
+<div className="bg-steam-item rounded p-6 mb-6 not-prose">
+  <h2 className="text-xl font-semibold text-steam-textPrimary mb-4">Steam Background Auto-Crop Tutorial</h2>
+
+  <ol className="list-decimal list-inside space-y-3 ml-4 text-steam-textMuted">
+    <li>In your inventory (Profile → Inventory), open your chosen background at full size and copy its URL.</li>
+    <li>
+      Paste the URL into <a href="https://steam.design">steam.design</a>, click "change BG" to preview, then "Download BG" to get the three cropped images.
+    </li>
+    <li>Unzip to get avatar, main (Artwork_Middle), and secondary (Artwork_Right_Top) images. Showcases need main and secondary.</li>
+    <li>
+      Open the <a href="https://steamcommunity.com/sharedfiles/edititem/767/3/">Steam artwork upload page</a>, select the main image, right-click, and choose Inspect.
+    </li>
+    <li>
+      Open the Console tab and paste one of the snippets below (default: artwork showcase):
+      <CopyCodeBlock label="Artwork showcase code" code={artworkCode} copyLabel="Copy code" copiedLabel="Copied" />
+      <CopyCodeBlock label="Screenshot showcase code" code={screenshotCode} copyLabel="Copy code" copiedLabel="Copied" />
+      <p className="text-sm mt-2">On success, the console returns a non-zero value (not unique).</p>
+    </li>
+    <li>Close the console, return to the upload page, and choose Save and continue.</li>
+    <li>Upload remaining images, set your profile background, add an Artwork Showcase, and assign main/secondary images.</li>
+  </ol>
+
+  <div className="bg-steam-item-in rounded p-4 mt-6">
+    <h4 className="text-steam-textPrimary font-medium mb-2">Important notes</h4>
+    <ul className="list-disc list-inside space-y-1 text-sm text-steam-textMuted">
+      <li>Use the correct code type (artwork vs screenshot showcase)</li>
+      <li>Successful execution returns a non-zero value</li>
+      <li>Remember to save and continue after upload</li>
+      <li>Set the correct showcase type on your profile page</li>
+    </ul>
+  </div>
+</div>

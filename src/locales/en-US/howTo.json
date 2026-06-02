@@ -1,0 +1,143 @@
+{
+  "meta": {
+    "title": "How-to Guide | ZoneHub",
+    "description": "Complete guide for Steam profile customization: basics, themes, showcases."
+  },
+  "intro": {
+    "title": "🎯 Getting Started",
+    "welcome": "Welcome to ZoneHub! This is a powerful Steam profile customization tool that lets you preview and design your profile page before publishing so you can see the final result."
+  },
+  "quickStart": {
+    "title": "⚡ Quick Start (3 steps)",
+    "steps": [
+      "On the homepage, click the blue \"Edit\" button (top right) to enter edit mode",
+      "Add and reorder showcases (Workshop, badges, artwork, etc.)",
+      "Customize avatar, background, and theme, then preview and copy to Steam"
+    ],
+    "footnote": "See below for detailed steps and screenshots for each feature."
+  },
+  "links": {
+    "title": "🔗 Quick Links",
+    "videoToGif": "Video to GIF Tool",
+    "artworkTools": "Artwork Showcase Tools"
+  },
+  "toc": {
+    "title": "📚 Table of Contents",
+    "open": "Open table of contents",
+    "close": "Close",
+    "backToTop": "Back to top",
+    "chapterLabels": [
+      "Basic Setup",
+      "Avatar & Personalization",
+      "Badge Display & Settings",
+      "Background & Themes",
+      "Artwork Showcase Tools",
+      "Text Formatting",
+      "More"
+    ]
+  },
+  "chapters": {
+    "ch1": {
+      "title": "Basic Setup",
+      "editButtonTitle": "📍 Edit Button Location",
+      "editButtonBody": "Find the blue \"Edit\" button in the top right corner of the page and click to enter edit mode.",
+      "editModeTitle": "🎯 Edit Mode Features",
+      "editModeBody": "After entering \"Edit\" mode, you can add, delete, and adjust the order of your showcases.",
+      "showcaseTypesTitle": "📦 Supported Showcase Types",
+      "showcaseTypesIntro": "Currently supports the following showcase types to help you create a personalized profile page.",
+      "showcaseTypesHeading": "Available Showcases:",
+      "showcaseItems": [
+        "Custom text box: Add personal descriptions and introductions",
+        "Workshop showcase: Preview quintuple-split images here (local editing)",
+        "Recent activity: Simulates Steam's recent activity showcase with free game news",
+        "Featured artwork showcase: Upload and display a featured artwork image",
+        "Custom section: A customizable text area, just like Steam showcases",
+        "Badge collector: Display badges in 1×6 or 2×6 layout",
+        "Collected guides (Record): Vinyl-record-style showcases with multiple record styles and one-click player text copy"
+      ],
+      "imgEditButtonAlt": "Edit button location",
+      "imgEditButtonCaption": "Edit button location — blue edit button in the top right corner",
+      "imgEditModeAlt": "Edit mode demo",
+      "imgEditModeCaption": "Edit mode demo — click Edit to design your profile layout"
+    },
+    "ch2": {
+      "title": "Avatar & Personalization",
+      "personalizationTitle": "🎨 Personalization",
+      "personalizationIntro": "The following personalization options are available to make your profile stand out.",
+      "personalizationHeading": "Currently supported:",
+      "personalizationItems": ["Custom avatar", "Custom nickname & profile summary"],
+      "previewTitle": "📱 Preview",
+      "previewBody": "Below is a demo of avatar and nickname settings.",
+      "imgAlt": "Avatar and personalization demo",
+      "imgCaption": "Avatar and personalization demo"
+    },
+    "ch3": {
+      "title": "Badge Display & Settings",
+      "headerTitle": "🏅 1. Profile header",
+      "headerBody": "Click the badge area on the profile header to open BadgePicker. Filter by color group or search by name in the top-right input. Steps: enter edit mode → click badge image → search/select badge → confirm.",
+      "pickerTitle": "🏅 2. Badge picker showcase",
+      "pickerBody": "In edit mode, add a \"Badge Picker\" showcase, then click it to choose badges.",
+      "imgProfileBadgeAlt": "Badge picker on profile header",
+      "imgCollectorBadgeAlt": "Badge settings in badge picker showcase"
+    },
+    "ch4": {
+      "title": "Background & Themes",
+      "builtinTitle": "🎨 Built-in backgrounds & themes",
+      "builtinIntro": "We include many backgrounds and themes so you can simulate a real Steam profile page and design a better home page.",
+      "builtinBgHeading": "Built-in backgrounds:",
+      "builtinBgs": ["Levia", "Chisaki Energy", "Reflection", "TOUHOU SKY ARENA", "True Panic"],
+      "videoBgHeading": "Built-in video backgrounds:",
+      "videoBgs": ["SPHERE", "Mushdash"],
+      "customUrlHeading": "Custom background / video URL supported",
+      "imgAlt": "Background and theme demo",
+      "imgCaption": "Background and theme demo"
+    },
+    "ch5": {
+      "title": "Artwork Showcase Tools",
+      "videoGifTitle": "🎬 Video to GIF",
+      "videoGifIntro": "Convert video to quintuple-split GIFs for Steam Workshop uploads.",
+      "featuresHeading": "Features:",
+      "features": [
+        "Multiple video formats supported",
+        "Auto-generate quintuple-split GIFs",
+        "Optimized file size for Workshop",
+        "Live conversion preview"
+      ],
+      "urlTitle": "🔗 URL",
+      "urlBody": "Tool path:",
+      "previewTitle": "📸 Steam profile preview",
+      "previewBody": "Shows ZoneHub Workshop preview support.",
+      "imgAlt": "Steam profile preview",
+      "imgCaption": "Steam profile preview"
+    },
+    "ch6": {
+      "title": "Text Formatting",
+      "tagsTitle": "🎛 Supported tags (ProfileRichText)",
+      "tagsIntro": "In comments, custom sections, and profile description, you can use:",
+      "tags": [
+        { "code": "[h1]Title Text[/h1]", "label": "Title text" },
+        { "code": "[b]Bold Text[/b]", "label": "Bold text" },
+        { "code": "[u]Underlined Text[/u]", "label": "Underlined text" },
+        { "code": "[i]Italic Text[/i]", "label": "Italic text" },
+        { "code": "[strike]Strikethrough Text[/strike]", "label": "Strikethrough text" },
+        { "code": "[spoiler]Hidden Text[/spoiler]", "label": "Hidden text (click to reveal)" },
+        { "code": "[noparse]Don't parse [b]tags[/b][/noparse]", "label": "Don't parse inner tags" },
+        { "code": "[hr][/hr]", "label": "Horizontal rule" },
+        { "code": "[url=store.steampowered.com]Website Link[/url]", "label": "Website link" },
+        { "code": "[quote=author]Quote Text[/quote]", "label": "Quote text" },
+        { "code": "[code]Monospace, preserve spaces[/code]", "label": "Monospace, preserve spaces" }
+      ],
+      "hrOr": "or"
+    },
+    "ch7": {
+      "title": "More",
+      "wipTitle": "🚧 Under Development",
+      "wipBody": "More features are on the way — stay tuned!"
+    }
+  },
+  "support": {
+    "freeNote": "ZoneHub is completely free to use. If you enjoy this project, consider supporting my work.",
+    "viewSupportCta": "View sponsors & support",
+    "viewSupportHint": "Sponsor wall and Afdian"
+  }
+}

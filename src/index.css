@@ -1,0 +1,235 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 全局样式 - 修复浏览器缩放时的白边问题 */
+body {
+  background-color: var(--steam-background);
+  margin: 0;
+  padding: 0;
+}
+
+/* Creator Center title font (ZCOOL) */
+.font-creator-title {
+  font-family: 'ZCOOL KuaiLe', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, 'Apple Color Emoji',
+    'Segoe UI Emoji';
+}
+
+/* CSS变量定义 - 通过JavaScript动态设置 */
+:root {
+  /* 基础颜色变量 - 将由JavaScript动态设置 */
+  --steam-dark: initial;
+  --steam-darker: initial;
+  --steam-textPrimary: initial;
+  --steam-textSecondary: initial;
+  --steam-textMuted: initial;
+  --steam-primary: initial;
+  --steam-secondary: initial;
+  --steam-border: initial;
+  --steam-headerBorder: initial;
+  --steam-gray: initial;
+  --steam-container: initial;
+  --steam-title: initial;
+  --steam-card: initial;
+  --steam-cardFooter: initial;
+  --steam-progress: initial;
+  --steam-badge: initial;
+  --steam-online: initial;
+  
+  /* 背景覆盖层变量 - 将由JavaScript动态设置 */
+  --steam-card: initial;
+  --steam-headerCard: initial;
+  --steam-mainContainer: initial;
+  --steam-overlay: initial;
+  --steam-container: initial;
+  --steam-item: initial;
+  --steam-itemIn: initial;
+  --steam-background: initial;
+  --steam-sidebar: initial;
+  --steam-profileEditButton: initial;
+  --steam-profileBadgeBox: initial;
+  
+  /* 边框配置变量 - 将由JavaScript动态设置 */
+  --steam-border-width: initial;
+  --steam-header-border-width: initial;
+  --steam-border-radius: initial;
+
+  /* 标题边框配置变量 - 将由JavaScript动态设置 */
+  --steam-title-border-type: initial;
+  --steam-title-border-primary-color: initial;
+  --steam-title-border-glow-color: initial;
+  --steam-title-border-width: initial;
+  --steam-title-border-glow-intensity: initial;
+
+  /* 效果配置变量 - 将由JavaScript动态设置 */
+  --steam-cardBlur: initial;
+  --steam-headerCardBlur: initial;
+  --steam-containerBlur: initial;
+  --steam-sidebarBlur: initial;
+  --steam-titleBlur: initial;
+  --steam-titleContainerBlur: initial;
+}
+
+/* 使用CSS变量的工具类 */
+.bg-steam-card {
+  background: var(--steam-card);
+}
+
+.bg-steam-header-card {
+  background: var(--steam-headerCard);
+}
+
+.bg-steam-main-container {
+  background: var(--steam-mainContainer);
+}
+
+.bg-steam-sidebar {
+  background: var(--steam-sidebar);
+}
+
+.bg-steam-overlay {
+  background-color: var(--steam-overlay);
+}
+
+.bg-steam-container {
+  background-color: var(--steam-container);
+}
+
+.bg-steam-item {
+  background-color: var(--steam-item);
+}
+
+.bg-steam-item-in {
+  background-color: var(--steam-itemIn);
+}
+
+/* 新增：ProfileHeader 徽章容器的独立背景（支持渐变与纯色），未配置时回退到 itemIn */
+.bg-steam-profileBadgeBox {
+  background: var(--steam-profileBadgeBox, var(--steam-itemIn));
+}
+
+.bg-steam-background-color {
+  background-color: var(--steam-background);
+}
+
+/* 新增：标题背景（支持渐变与纯色） */
+.bg-steam-title {
+  background: var(--steam-title);
+}
+
+/* 新增：个人资料编辑按钮背景（支持渐变与纯色） */
+.bg-steam-profileEditButton {
+  background: var(--steam-profileEditButton);
+}
+
+.text-steam-textPrimary {
+  color: var(--steam-textPrimary);
+}
+
+.text-steam-textSecondary {
+  color: var(--steam-textSecondary);
+}
+
+.text-steam-textMuted {
+  color: var(--steam-textMuted);
+}
+
+.text-steam-primary {
+  color: var(--steam-primary);
+}
+
+.bg-steam-primary {
+  background-color: var(--steam-primary);
+}
+
+.bg-steam-secondary {
+  background-color: var(--steam-secondary);
+}
+
+/* 边框工具类 */
+.border-steam-primary {
+  border-color: var(--steam-primary);
+}
+
+.border-steam-gray {
+  border-color: var(--steam-gray);
+}
+
+.border-steam-border {
+  border-color: var(--steam-border);
+}
+
+.border-steam-header-border {
+  border-color: var(--steam-headerBorder);
+}
+
+.border-steam {
+  border-width: var(--steam-border-width);
+}
+
+.border-steam-header {
+  border-width: var(--steam-header-border-width);
+}
+
+.rounded-steam {
+  border-radius: var(--steam-border-radius);
+}
+
+/* 标题边框工具类 */
+.title-border {
+  border-width: var(--steam-title-border-width);
+  border-color: var(--steam-title-border-primary-color);
+  border-style: solid;
+}
+
+.title-border-glow {
+  border-width: var(--steam-title-border-width);
+  border-color: var(--steam-title-border-primary-color);
+  border-style: solid;
+  box-shadow: inset 0 0 var(--steam-title-border-glow-intensity) var(--steam-title-border-glow-color);
+}
+
+/* 效果工具类 */
+.backdrop-blur-steam-card {
+  backdrop-filter: var(--steam-cardBlur);
+}
+
+.backdrop-blur-steam-header-card {
+  backdrop-filter: var(--steam-headerCardBlur);
+}
+
+.backdrop-blur-steam-main-container {
+  backdrop-filter: var(--steam-mainContainerBlur);
+}
+
+.backdrop-blur-steam-container {
+  backdrop-filter: var(--steam-containerBlur);
+}
+
+.backdrop-blur-steam-sidebar {
+  backdrop-filter: var(--steam-sidebarBlur);
+}
+
+/* 标题模糊工具类 */
+.backdrop-blur-steam-title {
+  backdrop-filter: var(--steam-titleBlur);
+}
+
+/* 标题+容器统一模糊（用于消除割裂） */
+.backdrop-blur-steam-title-container {
+  backdrop-filter: var(--steam-titleContainerBlur);
+}
+
+/* 唱片旋转动画 */
+@keyframes record-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.record-spin {
+  animation: record-rotate 8s linear infinite;
+}

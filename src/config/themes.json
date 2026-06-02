@@ -1,0 +1,316 @@
+{
+  "themes": [
+    {
+      "id": "Dark Mode",
+      "name": "Dark Mode",
+      "description": "Default Theme：Dark Mode",
+      "colors": {
+        "dark": "rgb(49, 62, 79)",
+        "darker": "#171a21",
+        "textPrimary": "rgb(222, 222, 222)",
+        "textSecondary": "rgb(118, 195, 254)",
+        "textMuted": "#aaaaaa",
+        "primary": "#66c0f4",
+        "secondary": "#417a9b",
+        "border": "rgba(35, 38, 46, 0)",
+        "headerBorder": "rgba(255, 255, 255, 0)",
+        "gray": "rgba(42, 71, 94, 0.8)",
+        "container": "#1e1e1e",
+        "title": "rgba(0, 0, 0, 1.0)",
+        "card": "rgba(30, 30, 30, 0.9)",
+        "cardFooter": "#2a2a2a",
+        "progress": "#181818",
+        "badge": "#393939",
+        "online": "rgba(11, 218, 234, 0.8)"
+      },
+      "backgrounds": {
+        "card": "rgba(29, 27, 27, 1.0)",
+        "headerCard": "rgba(29, 27, 27, 1.0)",
+        "mainContainer": "rgba(29, 27, 27, 1.0)",
+        "overlay": "rgba(0, 0, 0, 0.0)",
+        "container": "rgba(15, 15, 15, 1.0)",
+        "item": "rgba(2, 2, 2, 0.8)",
+        "itemIn": "rgba(2, 2, 2, 0.8)",
+        "background": "rgba(0, 0, 0, 1.0)",
+        "detail": {
+          "profileBadgeBox": "rgba(2, 2, 2, 0.8)"
+        }
+      },
+      "borders": {
+        "width": "0px",
+        "headerWidth": "0px",
+        "radius": "0rem"
+      },
+      "titleBorders": {
+        "type": "single-color",
+        "primaryColor": "rgba(66, 122, 155, 0.0)",
+        "width": "0px"
+      },
+      "effects": {
+        "cardBlur": true,
+        "headerCardBlur": true,
+        "containerBlur": true,
+        "mainContainerBlur": true
+      }
+    },
+    {
+      "id": "Midnight",
+      "name": "Midnight",
+      "description": "Default Theme：Midnight",
+      "colors": {
+        "dark": "rgb(49, 62, 79)",
+        "darker": "#171a21",
+        "textPrimary": "rgb(222, 222, 222)",
+        "textSecondary": "rgb(118, 195, 254)",
+        "textMuted": "#aaaaaa",
+        "primary": "#66c0f4",
+        "secondary": "#417a9b",
+        "border": "rgba(35, 38, 46, 0)",
+        "headerBorder": "rgba(255, 255, 255, 0)",
+        "gray": "rgba(42, 71, 94, 0.8)",
+        "container": "#1e1e1e",
+        "title": {
+          "type": "linear-gradient",
+          "direction": "to right",
+          "colors": [
+            "rgb(24, 31, 63,0.85)"
+          ]
+        },
+        "card": "rgba(30, 30, 30, 0.9)",
+        "cardFooter": "#2a2a2a",
+        "progress": "#181818",
+        "badge": "#393939",
+        "online": "rgba(11, 218, 234, 0.8)"
+      },
+      "backgrounds": {
+        "card": "rgba(29, 27, 27, 0.0)",
+        "headerCard": "rgba(29, 27, 27, 0.0)",
+        "mainContainer": {
+          "type": "linear-gradient",
+          "shape": "ellipse",
+          "position": "46% 38%",
+          "attachment": "fixed",
+          "directionPreset": "top-to-bottom",
+          "colors": [
+            "rgb(12, 16, 34) 5%",
+            "rgb(12, 36, 95) 14%",
+            "rgba(4, 8, 24, 0.97) 100%"
+          ]
+        },
+        "overlay": "rgba(0, 0, 0, 0.0)",
+        "container": "rgba(21, 21, 19, 0.1)",
+        "item": "rgb(8, 20, 50)",
+        "itemIn": "rgb(5, 8, 19)",
+        "background": "rgba(0, 0, 0, 1.0)",
+        "detail": {
+          "profileBadgeBox": "rgb(5, 8, 19)"
+        }
+      },
+      "borders": {
+        "width": "0px",
+        "headerWidth": "0px",
+        "radius": "0rem"
+      },
+      "titleBorders": {
+        "type": "single-color",
+        "primaryColor": "rgba(66, 122, 155, 0.0)",
+        "width": "0px"
+      },
+      "effects": {
+        "cardBlur": true,
+        "headerCardBlur": true,
+        "containerBlur": true,
+        "mainContainerBlur": true
+      }
+    },
+    {
+      "id": "dying-light-2",
+      "name": "dying-light-2",
+      "description": "dying-light-2",
+      "colors": {
+        "dark": " rgba(255, 31, 147, 0.8)",
+        "darker": " #171a21",
+        "textPrimary": "rgb(222, 222, 222)",
+        "textSecondary": "rgb(118, 195, 254)",
+        "textMuted": "#aaaaaa",
+        "primary": "#66c0f4",
+        "secondary": "#417a9b",
+        "border": "rgba(236, 9, 126, 0)",
+        "headerBorder": "rgba(236, 9, 126, 0)",
+        "gray": "rgba(42, 71, 94, 0.8)",
+        "container": "#1e1e1e",
+        "title": "rgba(91, 91, 91, 0.47)",
+        "card": "rgba(91, 91, 91, 0.47)",
+        "cardFooter": " #2a2a2a",
+        "progress": " #181818",
+        "badge": " #393939",
+        "online": " rgba(11, 218, 234, 0.8)"
+      },
+      "backgrounds": {
+        "card": " rgba(40, 40, 40, 0.0)",
+        "headerCard": " rgba(40, 40, 40, 0.0)",
+        "mainContainer": " rgba(40, 40, 40, 0.0)",
+        "overlay": " rgba(0, 0, 0, 0)",
+        "container": " rgba(91, 91, 91, 0.47)",
+        "item": " rgba(29, 28, 40, 0.74)",
+        "itemIn": " rgb(0, 0, 0)",
+        "background": " rgba(0, 0, 0, 4.0)",
+        "detail": {
+          "sidebar": "rgba(29, 28, 40, 0.44)",
+          "profileBadgeBox": "rgba(29, 28, 40, 0.64)"
+          
+        }
+      },
+      "borders": {
+        "width": "1px",
+        "headerWidth": "0px",
+        "radius": "0rem"
+      },
+      "titleBorders": {
+        "type": "glow",
+        "primaryColor": "rgba(255, 31, 147, 0.0)",
+        "glowColor": "rgba(255, 31, 147, 0.0)",
+        "width": "0px",
+        "glowIntensity": "0px"
+      },
+      "effects": {
+        "cardBlur": false,
+        "headerCardBlur": false,
+        "containerBlur": true,
+        "mainContainerBlur": false,
+        "titleBlur": true,
+        "titleContainerBlur": true,
+        "sidebarBlur": true
+      }
+    },
+    {
+      "id": "steam-duck",
+      "name": "steamduck",
+      "description": "steamduck",
+      "colors": {
+        "dark": " rgba(255, 31, 147, 0.8)",
+        "darker": " #171a21",
+        "textPrimary": "rgba(252, 238, 245, 0.8)",
+        "textSecondary": "rgba(252, 238, 245, 0.8)",
+        "textMuted": "#aaaaaa",
+        "primary": "#66c0f4",
+        "secondary": "#417a9b",
+        "border": "rgba(236, 9, 126, 0)",
+        "headerBorder": "rgba(236, 9, 126, 0)",
+        "gray": "rgba(252, 238, 245, 0.8)",
+        "container": "#1e1e1e",
+        "title": "rgba(91, 91, 91, 0.47)",
+        "card": "rgba(91, 91, 91, 0.47)",
+        "cardFooter": " #2a2a2a",
+        "progress": " #181818",
+        "badge": " #393939",
+        "online": " rgba(11, 218, 234, 0.8)"
+      },
+      "backgrounds": {
+        "card": " rgba(40, 40, 40, 0.0)",
+        "headerCard": " rgba(40, 40, 40, 0.0)",
+        "mainContainer": " rgba(40, 40, 40, 0.0)",
+        "overlay": " rgba(0, 0, 0, 0)",
+        "container": " rgba(11, 11, 11, 0.3)",
+        "item": " rgba(0, 0, 0, 0.3)",
+        "itemIn": " rgba(35, 35, 35, 0.8)",
+        "background": " rgba(0, 0, 0, 4.0)",
+        "detail": {
+          "profileBadgeBox": "rgba(35, 35, 35, 0.8)"
+        }
+      },
+      "borders": {
+        "width": "0px",
+        "headerWidth": "0px",
+        "radius": "0.4rem"
+      },
+      "titleBorders": {
+        "type": "glow",
+        "primaryColor": "rgba(230, 64, 150, 0.8)",
+        "glowColor": "rgba(214, 3, 112, 0.8)",
+        "width": "2.6px",
+        "glowIntensity": "16px"
+      },
+      "effects": {
+        "cardBlur": false,
+        "headerCardBlur": false,
+        "containerBlur": true,
+        "mainContainerBlur": false
+      }
+    },
+    {
+      "id": "SteamWinterMorning2023",
+      "name": "Steam Winter Morning 2023",
+      "description": "Thema: Steam Winter Morning 2023",
+      "colors": {
+        "dark": "rgb(49, 62, 79)",
+        "darker": "#171a21",
+        "textPrimary": "rgb(222, 222, 222)",
+        "textSecondary": "rgb(118, 195, 254)",
+        "textMuted": "#aaaaaa",
+        "primary": "#66c0f4",
+        "secondary": "#417a9b",
+        "border": "rgba(35, 38, 46, 0)",
+        "headerBorder": "rgba(255, 255, 255, 0)",
+        "gray": "rgba(42, 71, 94, 0.8)",
+        "container": "#1e1e1e",
+        "title": {
+          "type": "linear-gradient",
+          "direction": "to right",
+          "colors": [
+            "rgb(160, 59, 89,0.9)",
+            "rgb(175, 124, 160, 0.9)"
+          ]
+        },
+        "card": "rgba(30, 30, 30, 0.9)",
+        "cardFooter": "#2a2a2a",
+        "progress": "#181818",
+        "badge": "#393939",
+        "online": "rgba(11, 218, 234, 0.8)"
+      },
+      "backgrounds": {
+        "card": "rgba(29, 27, 27, 0.0)",
+        "headerCard": "rgba(29, 27, 27, 0.0)",
+        "mainContainer": {
+          "type": "linear-gradient",
+          "shape": "ellipse",
+          "position": "46% 38%",
+          "attachment": "fixed",
+          "directionPreset": "top-to-bottom",
+          "colors": [
+            "rgb(143, 116, 161, 0.6) 5%",
+            "rgb(158, 60, 88, 0.7) 14%",
+            "rgb(126, 141, 195, 0.97) 100%"
+          ]
+        },
+        "overlay": "rgba(0, 0, 0, 0.0)",
+        "container": "rgba(21, 21, 19, 0.1)",
+        "item": "rgb(34, 29, 42, 0.6)",
+        "itemIn": "rgb(34, 29, 42, 0.8)",
+        "background": "rgba(0, 0, 0, 1.0)",
+        "detail": {
+          "sidebar": "rgba(38, 36, 49, 0.4)",
+          "profileEditButton": "rgba(38, 36, 49, 0.4)",
+          "profileBadgeBox": "rgba(38, 36, 49, 0.4)"
+        }
+      },
+      "borders": {
+        "width": "0px",
+        "headerWidth": "0px",
+        "radius": "0rem"
+      },
+      "titleBorders": {
+        "type": "single-color",
+        "primaryColor": "rgba(66, 122, 155, 0.0)",
+        "width": "0px"
+      },
+      "effects": {
+        "cardBlur": false,
+        "headerCardBlur": false,
+        "containerBlur": false,
+        "mainContainerBlur": false,
+        "sidebarBlur": true
+      }
+    }
+  ]
+}

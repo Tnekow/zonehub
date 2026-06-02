@@ -1,0 +1,210 @@
+{
+  "title": "Steam ガイド",
+  "subtitle": "Steam コミュニティガイドとチュートリアル",
+  "description": "Steam の各種機能を活用するための厳選ガイド集",
+  "categories": {
+    "all": "すべて",
+    "messageBoard": "掲示板",
+    "badges": "バッジ",
+    "profile": "プロフィール",
+    "artwork": "イラスト",
+    "inventory": "インベントリ",
+    "social": "ソーシャル",
+    "workshop": "ワークショップ",
+    "market": "マーケット",
+    "screenshots": "スクリーンショット＆動画",
+    "security": "アカウントのセキュリティ"
+  },
+  "difficulties": {
+    "all": "すべての難易度",
+    "beginner": "初級",
+    "intermediate": "中級",
+    "advanced": "上級"
+  },
+  "filters": {
+    "title": "ガイドを絞り込む",
+    "category": "カテゴリ",
+    "difficulty": "難易度",
+    "rating": "評価",
+    "downloads": "ダウンロード数",
+    "date": "日付",
+    "author": "著者",
+    "tags": "タグ",
+    "clear": "フィルターをクリア",
+    "apply": "適用"
+  },
+  "sort": {
+    "title": "並び替え",
+    "default": "標準",
+    "newest": "新しい順",
+    "oldest": "古い順",
+    "rating": "評価",
+    "downloads": "ダウンロード数",
+    "views": "閲覧数",
+    "likes": "いいね",
+    "comments": "コメント",
+    "author": "著者"
+  },
+  "search": {
+    "placeholder": "ガイドを検索...",
+    "noResults": "該当するガイドがありません",
+    "tryDifferentKeywords": "別のキーワードをお試しください",
+    "searchInGuides": "ガイド内を検索"
+  },
+  "guide": {
+    "title": "ガイドタイトル",
+    "description": "説明",
+    "category": "カテゴリ",
+    "difficulty": "難易度",
+    "author": "著者",
+    "date": "公開日",
+    "rating": "評価",
+    "downloads": "ダウンロード数",
+    "views": "閲覧数",
+    "likes": "いいね",
+    "comments": "コメント",
+    "tags": "タグ",
+    "content": "本文",
+    "url": "URL",
+    "steamId": "Steam ワークショップ ID",
+    "imageUrl": "プレビュー画像",
+    "readMore": "続きを読む",
+    "viewOnSteam": "Steam で見る",
+    "download": "ダウンロード",
+    "like": "いいね",
+    "unlike": "いいね解除",
+    "share": "共有",
+    "report": "報告",
+    "edit": "編集",
+    "delete": "削除"
+  },
+  "actions": {
+    "createGuide": "ガイドを作成",
+    "editGuide": "ガイドを編集",
+    "deleteGuide": "ガイドを削除",
+    "publishGuide": "公開",
+    "draftGuide": "下書き保存",
+    "previewGuide": "プレビュー",
+    "shareGuide": "共有",
+    "reportGuide": "報告",
+    "followAuthor": "著者をフォロー",
+    "unfollowAuthor": "フォロー解除",
+    "viewAuthorProfile": "著者プロフィール",
+    "viewAllGuides": "すべてのガイド",
+    "viewCategoryGuides": "{{category}} のガイド",
+    "viewAuthorGuides": "{{author}} のガイド"
+  },
+  "stats": {
+    "totalGuides": "ガイド総数",
+    "totalDownloads": "総ダウンロード数",
+    "totalViews": "総閲覧数",
+    "totalLikes": "総いいね数",
+    "totalComments": "総コメント数",
+    "averageRating": "平均評価",
+    "topCategory": "人気カテゴリ",
+    "topAuthor": "人気著者",
+    "recentGuides": "最近のガイド",
+    "popularGuides": "人気ガイド",
+    "trendingGuides": "トレンド"
+  },
+  "messages": {
+    "guideCreated": "ガイドを作成しました",
+    "guideUpdated": "ガイドを更新しました",
+    "guideDeleted": "ガイドを削除しました",
+    "guidePublished": "ガイドを公開しました",
+    "guideLiked": "いいねしました",
+    "guideUnliked": "いいねを解除しました",
+    "guideShared": "共有しました",
+    "guideReported": "報告しました",
+    "errorCreatingGuide": "ガイドの作成に失敗しました",
+    "errorUpdatingGuide": "ガイドの更新に失敗しました",
+    "errorDeletingGuide": "ガイドの削除に失敗しました",
+    "errorPublishingGuide": "ガイドの公開に失敗しました",
+    "errorLikingGuide": "いいねに失敗しました",
+    "errorSharingGuide": "共有に失敗しました",
+    "errorReportingGuide": "報告に失敗しました",
+    "confirmDelete": "このガイドを削除してもよろしいですか？",
+    "confirmReport": "このガイドを報告してもよろしいですか？",
+    "guideNotFound": "ガイドが見つかりません",
+    "accessDenied": "アクセスが拒否されました",
+    "invalidGuide": "無効なガイドです"
+  },
+  "sampleGuides": {
+    "moePointArt": {
+      "title": "Moe Point Art Collection!!! (MOE point art!!!)",
+      "description": "かわいいピクセルアートを集めたコレクション。Steam プロフィールの装飾に最適です。",
+      "category": "掲示板",
+      "difficulty": "初級",
+      "tags": {
+        "moe": "萌え",
+        "pointArt": "ポイントアート",
+        "pixelArt": "ピクセルアート",
+        "cute": "かわいい"
+      },
+      "author": "H.T River",
+      "date": "2024-03-27",
+      "rating": 4.6,
+      "downloads": 15000
+    },
+    "steamBadges": {
+      "title": "Steam バッジコレクション",
+      "description": "Steam バッジの収集ガイド。レアバッジの入手方法やコレクションのコツを解説。",
+      "category": "バッジ",
+      "difficulty": "上級",
+      "tags": {
+        "badges": "バッジ",
+        "collection": "コレクション",
+        "rare": "レア",
+        "achievements": "実績"
+      },
+      "author": "Badge Hunter",
+      "date": "2024-01-08",
+      "rating": 4.6,
+      "downloads": 25000
+    },
+    "allColorsSteamThemes": {
+      "title": "All Colors Steam Themes [2025 UPDATED]",
+      "description": "様々な色とスタイルの Steam プロフィールテーマ集。無料・有料テーマでプロフィールを際立たせよう。",
+      "category": "プロフィール",
+      "difficulty": "初級",
+      "tags": {
+        "themes": "テーマ",
+        "profile": "プロフィール",
+        "customization": "カスタマイズ",
+        "colors": "カラー"
+      },
+      "author": "Tornado - profile animations",
+      "date": "2025-02-19",
+      "rating": 4.6,
+      "downloads": 37074
+    },
+    "naviSteamCheckLog": {
+      "title": "Navi's Steam Inspection Log",
+      "description": "バッジ・背景の整理を中心に、アバター枠・アニメーションアバター・実績の組み合わせなど、プロフィール美化チュートリアル。アバター、500+ Steam バッジ、実績、背景…",
+      "author": "देव-Deva",
+      "rating": 4.6,
+      "downloads": 22000
+    },
+    "devaGuides": {
+      "title": "देव-Deva's Guides",
+      "description": "Steam ガイドクリエイター देव-Deva による厳選テーマ／アーティスト／ゲーム／スペシャルプロフィール集。",
+      "author": "देव-Deva",
+      "rating": 4.6,
+      "downloads": 18000
+    },
+    "profileBeautifyTips": {
+      "title": "プロフィール美化 — ヒント・ツール・リソース",
+      "description": "プロフィールを美しくしたいプレイヤーからのよくある質問と解決策をまとめました。参考までにご利用ください。",
+      "author": "call",
+      "date": "2025-10-29",
+      "rating": 4.6,
+      "downloads": 12000
+    },
+    "nasgeWysiwygGuide": {
+      "title": "WYSIWYG でガイドとレビューを編集する",
+      "description": "Steam のガイドとレビューを視覚的に編集できるエディター。テーマ切替、画像プール、内容同期、インポート/エクスポートに対応。",
+      "author": "静火 と kaikisen",
+      "date": "2025-12-31"
+    }
+  }
+}

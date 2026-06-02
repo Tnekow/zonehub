@@ -1,0 +1,211 @@
+{
+  "title": "Steam指南",
+  "subtitle": "Steam社区指南和教程",
+  "description": "精选的Steam社区指南，帮助你更好地使用Steam的各种功能",
+  "categories": {
+    "all": "全部",
+    "messageBoard": "留言板",
+    "badges": "徽章",
+    "profile": "个人资料",
+    "artwork": "艺术作品",
+    "inventory": "库存管理",
+    "social": "社交功能",
+    "workshop": "创意工坊",
+    "market": "市场交易",
+    "screenshots": "截图视频",
+    "security": "账户安全"
+  },
+  "difficulties": {
+    "all": "全部难度",
+    "beginner": "初级",
+    "intermediate": "中级",
+    "advanced": "高级"
+  },
+  "filters": {
+    "title": "筛选指南",
+    "category": "分类",
+    "difficulty": "难度",
+    "rating": "评分",
+    "downloads": "下载量",
+    "date": "日期",
+    "author": "作者",
+    "tags": "标签",
+    "clear": "清空筛选",
+    "apply": "应用筛选"
+  },
+  "sort": {
+    "title": "排序",
+    "default": "默认",
+    "newest": "最新",
+    "oldest": "最旧",
+    "rating": "评分",
+    "downloads": "下载量",
+    "views": "浏览量",
+    "likes": "点赞数",
+    "comments": "评论数",
+    "title": "标题",
+    "author": "作者"
+  },
+  "search": {
+    "placeholder": "搜索指南...",
+    "noResults": "没有找到相关指南",
+    "tryDifferentKeywords": "尝试使用不同的关键词",
+    "searchInGuides": "在指南中搜索"
+  },
+  "guide": {
+    "title": "指南标题",
+    "description": "指南描述",
+    "category": "分类",
+    "difficulty": "难度",
+    "author": "作者",
+    "date": "发布日期",
+    "rating": "评分",
+    "downloads": "下载次数",
+    "views": "浏览量",
+    "likes": "点赞数",
+    "comments": "评论数",
+    "tags": "标签",
+    "content": "内容",
+    "url": "链接",
+    "steamId": "Steam创意工坊ID",
+    "imageUrl": "预览图片",
+    "readMore": "阅读更多",
+    "viewOnSteam": "在Steam上查看",
+    "download": "下载",
+    "like": "点赞",
+    "unlike": "取消点赞",
+    "share": "分享",
+    "report": "举报",
+    "edit": "编辑",
+    "delete": "删除"
+  },
+  "actions": {
+    "createGuide": "创建指南",
+    "editGuide": "编辑指南",
+    "deleteGuide": "删除指南",
+    "publishGuide": "发布指南",
+    "draftGuide": "保存草稿",
+    "previewGuide": "预览指南",
+    "shareGuide": "分享指南",
+    "reportGuide": "举报指南",
+    "followAuthor": "关注作者",
+    "unfollowAuthor": "取消关注作者",
+    "viewAuthorProfile": "查看作者资料",
+    "viewAllGuides": "查看所有指南",
+    "viewCategoryGuides": "查看{{category}}指南",
+    "viewAuthorGuides": "查看{{author}}的指南"
+  },
+  "stats": {
+    "totalGuides": "总指南数",
+    "totalDownloads": "总下载量",
+    "totalViews": "总浏览量",
+    "totalLikes": "总点赞数",
+    "totalComments": "总评论数",
+    "averageRating": "平均评分",
+    "topCategory": "最热门分类",
+    "topAuthor": "最活跃作者",
+    "recentGuides": "最近指南",
+    "popularGuides": "热门指南",
+    "trendingGuides": "趋势指南"
+  },
+  "messages": {
+    "guideCreated": "指南创建成功",
+    "guideUpdated": "指南更新成功",
+    "guideDeleted": "指南删除成功",
+    "guidePublished": "指南发布成功",
+    "guideLiked": "指南点赞成功",
+    "guideUnliked": "取消点赞成功",
+    "guideShared": "指南分享成功",
+    "guideReported": "指南举报成功",
+    "errorCreatingGuide": "创建指南失败",
+    "errorUpdatingGuide": "更新指南失败",
+    "errorDeletingGuide": "删除指南失败",
+    "errorPublishingGuide": "发布指南失败",
+    "errorLikingGuide": "点赞失败",
+    "errorSharingGuide": "分享失败",
+    "errorReportingGuide": "举报失败",
+    "confirmDelete": "确定要删除这个指南吗？",
+    "confirmReport": "确定要举报这个指南吗？",
+    "guideNotFound": "指南不存在",
+    "accessDenied": "访问被拒绝",
+    "invalidGuide": "无效的指南"
+  },
+  "sampleGuides": {
+    "moePointArt": {
+      "title": "萌系点点图合集!!!（MOE point art!!!）",
+      "description": "精美的萌系点点图合集，包含各种可爱的像素风格艺术作品，适合用于Steam个人资料装饰",
+      "category": "留言板",
+      "difficulty": "初级",
+      "tags": {
+        "moe": "萌系",
+        "pointArt": "点点图",
+        "pixelArt": "像素艺术",
+        "cute": "可爱"
+      },
+      "author": "H.T River",
+      "date": "2024-03-27",
+      "rating": 4.6,
+      "downloads": 15000
+    },
+    "steamBadges": {
+      "title": "Steam Badges Collection",
+      "description": "完整的Steam徽章收集指南，包含稀有徽章获取方法和收集技巧",
+      "category": "徽章",
+      "difficulty": "高级",
+      "tags": {
+        "badges": "徽章",
+        "collection": "收集",
+        "rare": "稀有",
+        "achievements": "成就"
+      },
+      "author": "徽章猎人",
+      "date": "2024-01-08",
+      "rating": 4.6,
+      "downloads": 25000
+    },
+    "allColorsSteamThemes": {
+      "title": "全色彩Steam主题 [2025年更新]",
+      "description": "全面的Steam个人资料主题合集，包含各种颜色和风格，包括免费和高级主题，让你的个人资料脱颖而出",
+      "category": "个人资料",
+      "difficulty": "初级",
+      "tags": {
+        "themes": "主题",
+        "profile": "个人资料",
+        "customization": "自定义",
+        "colors": "色彩"
+      },
+      "author": "Tornado - profile animations",
+      "date": "2025-02-19",
+      "rating": 4.6,
+      "downloads": 37074
+    },
+    "naviSteamCheckLog": {
+      "title": "Navi的Steam检测记录",
+      "description": "本指南主要是整理徽章和背景，也包含头像边框和动画头像、成套成就组合样式等，以及其他美化教程内容。 Avatar、500+Steam badge、Achievements、Background……",
+      "author": "देव-Deva",
+      "rating": 4.6,
+      "downloads": 22000
+    },
+    "devaGuides": {
+      "title": "देव-Deva 的指南",
+      "description": "来自 Steam 指南创作者 देव-Deva 整理的主题/艺术家/游戏/特别个人资料",
+      "author": "देव-Deva",
+      "rating": 4.6,
+      "downloads": 18000
+    },
+    "profileBeautifyTips": {
+      "title": "主页美化 — 技巧、工具、资源",
+      "description": "集齐了想要美化主页的玩家们所困扰的问题并提出解决方案。仅供参考。",
+      "author": "call",
+      "date": "2025-10-29",
+      "rating": 4.6,
+      "downloads": 12000
+    },
+    "nasgeWysiwygGuide": {
+      "title": "以“所见即所得”的形式编辑指南和评测",
+      "description": "可视化编辑器，支持以所见即所得的方式编辑 Steam 指南与评测，提供主题切换、图片池、内容同步、导入导出等能力。",
+      "author": "静火和kaikisen",
+      "date": "2025-12-31"
+    }
+  }
+}

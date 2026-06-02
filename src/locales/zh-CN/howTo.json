@@ -1,0 +1,143 @@
+{
+  "meta": {
+    "title": "使用教程｜ZoneHub",
+    "description": "Steam 个人资料自定义完整教程：基础设置、主题、展柜工具。"
+  },
+  "intro": {
+    "title": "🎯 开始使用",
+    "welcome": "欢迎使用 ZoneHub！这是一个强大的 Steam 个人资料自定义工具，让你能够预览和设计你的个人资料页面，在发布之前看到最终效果。"
+  },
+  "quickStart": {
+    "title": "⚡ 快速开始（3 步）",
+    "steps": [
+      "在首页点击右上角蓝色「编辑」进入编辑模式",
+      "添加、排序展柜（创意工坊、徽章、艺术作品等）",
+      "在头像/背景/主题中做个性化设置，预览效果后复制到 Steam"
+    ],
+    "footnote": "下方有各功能的详细说明与配图，需要时随时查阅。"
+  },
+  "links": {
+    "title": "🔗 常用链接",
+    "videoToGif": "视频转 GIF 工具",
+    "artworkTools": "艺术作品展柜工具"
+  },
+  "toc": {
+    "title": "📚 目录",
+    "open": "打开目录",
+    "close": "关闭",
+    "backToTop": "回到顶部",
+    "chapterLabels": [
+      "基础设置",
+      "头像与个性化设置",
+      "徽章展示与设置",
+      "背景与主题",
+      "艺术作品展柜工具",
+      "文字格式支持",
+      "更多"
+    ]
+  },
+  "chapters": {
+    "ch1": {
+      "title": "基础设置",
+      "editButtonTitle": "📍 编辑按钮位置",
+      "editButtonBody": "在页面右上角找到蓝色的\"编辑\"按钮，点击即可进入编辑模式。",
+      "editModeTitle": "🎯 编辑模式功能",
+      "editModeBody": "进入\"编辑\"模式后，可以选择增加、删除、调整你的展柜之间的排序。",
+      "showcaseTypesTitle": "📦 支持的展柜类型",
+      "showcaseTypesIntro": "目前支持以下展柜类型，帮助你打造个性化的个人资料页面。",
+      "showcaseTypesHeading": "可用展柜：",
+      "showcaseItems": [
+        "自定义文本框：添加个人说明和介绍",
+        "创意工坊展柜：在此预览五等分图片效果（本地编辑）",
+        "最新动态：模拟 Steam 的最新动态展柜，本站展示了最新的一些限免游戏资讯",
+        "精选艺术作品展柜：上传并展示一张精选艺术图片",
+        "自定义区块：同 Steam 展柜，提供可自定义文字的区域",
+        "徽章收藏家：展示徽章，支持 1×6 和 2×6 两种排列方式",
+        "收藏的指南（唱片）：方便玩家制作唱片效果的展柜，提供了多种唱片样式和播放器文案一键复制"
+      ],
+      "imgEditButtonAlt": "编辑按钮位置",
+      "imgEditButtonCaption": "编辑按钮位置 - 页面右上角的蓝色编辑按钮",
+      "imgEditModeAlt": "编辑模式功能演示",
+      "imgEditModeCaption": "编辑模式功能演示 - 点击编辑按钮设计你首页的排版"
+    },
+    "ch2": {
+      "title": "头像与个性化设置",
+      "personalizationTitle": "🎨 个性化设置",
+      "personalizationIntro": "目前支持以下个性化设置，让你的个人资料更加独特。",
+      "personalizationHeading": "目前支持：",
+      "personalizationItems": ["个性化头像设置", "个性化昵称 & 个人介绍"],
+      "previewTitle": "📱 设置使用预览",
+      "previewBody": "以下是头像与昵称设置的演示过程。",
+      "imgAlt": "头像与个性化设置演示",
+      "imgCaption": "头像与个性化设置演示"
+    },
+    "ch3": {
+      "title": "徽章展示与设置",
+      "headerTitle": "🏅 1. 个人资料头部",
+      "headerBody": "在个人资料头部可以点击徽章区域打开徽章选择器（BadgePicker）。支持按颜色分组快速筛选，并可在右上角输入框搜索名称。选择步骤：进入编辑模式 → 点徽章图片 → 搜索/选择目标徽章 → 确认。",
+      "pickerTitle": "🏅 2. 徽章选择器处设置徽章",
+      "pickerBody": "首先需要使用编辑模式，添加\"徽章选择器\"。然后点击徽章选择器，选择你想要的徽章。",
+      "imgProfileBadgeAlt": "个人资料处的徽章选择器",
+      "imgCollectorBadgeAlt": "徽章选择器处的徽章设置"
+    },
+    "ch4": {
+      "title": "背景与主题",
+      "builtinTitle": "🎨 内置背景与主题",
+      "builtinIntro": "我们内置了多种精美的背景和主题，让你能够更好地模拟真实的 Steam 个人资料页面，从而帮助你创作更好的玩家首页。",
+      "builtinBgHeading": "内置背景：",
+      "builtinBgs": ["Levia", "千夏能量", "Reflection", "TOUHOU SKY ARENA", "True Panic"],
+      "videoBgHeading": "内置视频背景：",
+      "videoBgs": ["SPHERE", "Mushdash"],
+      "customUrlHeading": "支持自定义背景/视频URL",
+      "imgAlt": "背景与主题设置演示",
+      "imgCaption": "背景与主题设置演示"
+    },
+    "ch5": {
+      "title": "艺术作品展柜工具",
+      "videoGifTitle": "🎬 视频转GIF工具",
+      "videoGifIntro": "将视频转换为五等分GIF，方便上传到Steam创意工坊。",
+      "featuresHeading": "功能特点：",
+      "features": [
+        "支持多种视频格式转换",
+        "自动生成五等分GIF",
+        "优化文件大小，适合创意工坊上传",
+        "实时预览转换效果"
+      ],
+      "urlTitle": "🔗 访问地址",
+      "urlBody": "工具地址：",
+      "previewTitle": "📸 Steam首页预览图",
+      "previewBody": "展示 ZoneHub 支持的创意工坊预览功能。",
+      "imgAlt": "Steam首页预览图",
+      "imgCaption": "Steam首页预览图"
+    },
+    "ch6": {
+      "title": "文字格式支持",
+      "tagsTitle": "🎛 可用标记（ProfileRichText）",
+      "tagsIntro": "在留言板、自定义区块、个人简介等展示时，支持以下格式标签：",
+      "tags": [
+        { "code": "[h1]标题文字[/h1]", "label": "标题文字" },
+        { "code": "[b]粗体文本[/b]", "label": "粗体文本" },
+        { "code": "[u]下划线文本[/u]", "label": "下划线文本" },
+        { "code": "[i]斜体文本[/i]", "label": "斜体文本" },
+        { "code": "[strike]删除文本[/strike]", "label": "删除文本" },
+        { "code": "[spoiler]隐藏文本[/spoiler]", "label": "隐藏文本（点击显示）" },
+        { "code": "[noparse]不解析[b]标签[/b][/noparse]", "label": "不解析内部标签" },
+        { "code": "[hr][/hr]", "label": "渲染水平分隔线" },
+        { "code": "[url=store.steampowered.com]网站链接[/url]", "label": "网站链接" },
+        { "code": "[quote=author]引用文本[/quote]", "label": "引用文本" },
+        { "code": "[code]等宽字体，保留空格[/code]", "label": "等宽字体，保留空格" }
+      ],
+      "hrOr": "或"
+    },
+    "ch7": {
+      "title": "更多",
+      "wipTitle": "🚧 开发中",
+      "wipBody": "开发者正在更新中，尽情期待！"
+    }
+  },
+  "support": {
+    "freeNote": "ZoneHub 目前完全免费使用。如果你喜欢这个项目，欢迎支持我的开发工作。",
+    "viewSupportCta": "查看赞助与支持",
+    "viewSupportHint": "赞助墙与爱发电入口"
+  }
+}

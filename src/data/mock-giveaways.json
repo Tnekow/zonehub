@@ -1,0 +1,23 @@
+[
+  {
+    "id": 10001,
+    "title": "Offline Giveaway Placeholder A",
+    "image": "/images/star.jpg",
+    "thumbnail": "/images/star.jpg",
+    "end_date": null
+  },
+  {
+    "id": 10002,
+    "title": "Offline Giveaway Placeholder B",
+    "image": "/images/star.webp",
+    "thumbnail": "/images/star.webp",
+    "end_date": null
+  },
+  {
+    "id": 10003,
+    "title": "Offline Giveaway Placeholder C",
+    "image": "/images/star.jpg",
+    "thumbnail": "/images/star.jpg",
+    "end_date": null
+  }
+]

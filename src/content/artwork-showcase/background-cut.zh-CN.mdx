@@ -1,0 +1,45 @@
+import { CopyCodeBlock } from '../../components/mdx/CopyCodeBlock';
+
+export const pageTitle = '仅切割背景 - 教程';
+
+const artworkCode = `var num= document.getElementsByName("image_width")[0].value;
+document.getElementsByName("image_height")[0].value = num-(num-1);
+document.getElementsByName("image_width")[0].value= num*100;`;
+
+const screenshotCode = `document.getElementsByName("file_type")[0].value= 5;
+var num= document.getElementsByName("image_width")[0].value;
+document.getElementsByName("image_height")[0].value = num-(num-1);
+document.getElementsByName("image_width")[0].value= num*100;`;
+
+<div className="bg-steam-item rounded p-6 mb-6 not-prose">
+  <h2 className="text-xl font-semibold text-steam-textPrimary mb-4">Steam背景自动裁剪教程</h2>
+
+  <ol className="list-decimal list-inside space-y-3 ml-4 text-steam-textMuted">
+    <li>在库存（个人首页-库存）中找到你选好的背景，点击「查看完整大小」，然后复制背景的网址</li>
+    <li>
+      使用背景自动裁剪网站 <a href="https://steam.design">steam.design</a>，在框里粘贴刚刚复制的背景网址，点击「change BG」预览效果，再点击「Download BG」即可下载已经裁好的三张图的压缩包
+    </li>
+    <li>解压缩，得到一个头像图，一张主图（Artwork_Middle），一张副图（Artwork_Right_Top）。做展柜需要主图和副图</li>
+    <li>
+      打开 Steam 艺术作品上传页：<a href="https://steamcommunity.com/sharedfiles/edititem/767/3/">艺术品上传</a>，选中我们刚裁好的主图，然后右键，选择「检查」
+    </li>
+    <li>
+      点击「Console」进入控制台。粘贴以下代码（根据需要选择，默认艺术品展柜）：
+      <CopyCodeBlock label="艺术品展柜代码" code={artworkCode} copyLabel="复制代码" copiedLabel="已复制" />
+      <CopyCodeBlock label="截图展柜代码" code={screenshotCode} copyLabel="复制代码" copiedLabel="已复制" />
+      <p className="text-sm mt-2">如果修改成功，console 会返给你非 0 的值（值不唯一）</p>
+    </li>
+    <li>关闭控制台，回到上传页面，选择「保存并继续」</li>
+    <li>按照以上操作，把剩余图片上传完毕，到你的个人资料页，设置好选好的背景后，将第一个展柜设置成「艺术品展示柜」，并分别选中主图和副图</li>
+  </ol>
+
+  <div className="bg-steam-item-in rounded p-4 mt-6">
+    <h4 className="text-steam-textPrimary font-medium mb-2">重要提示</h4>
+    <ul className="list-disc list-inside space-y-1 text-sm text-steam-textMuted">
+      <li>确保使用正确的代码类型（艺术品展柜 vs 截图展柜）</li>
+      <li>代码执行后应该返回非 0 值表示成功</li>
+      <li>上传完成后记得保存并继续</li>
+      <li>在个人资料页正确设置展柜类型</li>
+    </ul>
+  </div>
+</div>

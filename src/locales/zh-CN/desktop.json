@@ -1,0 +1,120 @@
+{
+  "header": {
+    "title": "ZoneHub",
+    "subtitle": "个人资料设计引擎",
+    "connectedAs": "已连接：{{name}}",
+    "workspaceLabel": "设计引擎工作区"
+  },
+  "panel": {
+    "desktopPanel": "引擎面板",
+    "language": "语言",
+    "desktopFeatures": "桌面功能",
+    "desktopNav": "桌面导航",
+    "sessionNotes": "使用说明",
+    "sessionNotesText": "需要背景、主题与布局操作时请展开此面板；需要更大编辑区域时可收起。",
+    "moveToExpand": "移动展开"
+  },
+  "achievementToast": {
+    "unlockedTitle": "成就已解锁"
+  },
+  "nav": {
+    "home": "首页",
+    "artwork": "展柜助手",
+    "guides": "指南",
+    "tutorial": "教程",
+    "workspace": "工作区",
+    "currentRoute": "当前路由"
+  },
+  "actions": {
+    "newDesktopProject": "新建桌面项目",
+    "backgroundSettings": "背景设置",
+    "profileTheme": "资料主题",
+    "edit": "编辑",
+    "exitEdit": "退出编辑",
+    "chooseBackground": "选择背景",
+    "customBackgroundUrl": "自定义背景链接",
+    "imageOrVideoUrl": "图片或视频链接，应用后面板将关闭。",
+    "chooseProfileTheme": "选择资料主题",
+    "applyButton": "应用"
+  },
+  "marketingSafePreview": {
+    "sectionTitle": "蓝图模式",
+    "label": "蓝图预览",
+    "description": "以蓝图线框风格显示预览区，编辑与存档不受影响。",
+    "enabledHint": "蓝图预览已启用，可在左侧引擎面板随时关闭。",
+    "fabExit": "退出蓝图"
+  },
+  "blueprint": {
+    "hintProfile": "身份与简介区",
+    "hintMedia": "在此放置作品或媒体",
+    "hintRow": "横向内容条带",
+    "hintMatrix": "徽章或图标矩阵",
+    "hintBlock": "自定义内容块",
+    "hintSidebar": "侧栏组件区",
+    "hintThread": "动态/评论串",
+    "hintAdd": "添加展柜模块",
+    "hintWorkshop": "创意工坊展柜条带",
+    "hintFeaturedArt": "艺术展柜主区与侧条",
+    "hintCuratedArt": "精选艺术展柜双线框",
+    "hintGuideDeck": "指南唱片与文案列",
+    "hintActivity": "最新动态与在线状态",
+    "ariaProfile": "资料头图与简介布局",
+    "ariaThread": "评论与动态区域布局",
+    "ariaSidebar": "侧栏小部件布局",
+    "ariaActivity": "侧栏最新动态区域布局",
+    "ariaAdd": "添加展柜模块面板",
+    "dimWorkshop": "单卡高度 400 px · 列宽 =（行内宽度 − 间距）÷ 物品数量",
+    "dimCurated": "双层线框间距 10 px · 图片随内框缩放",
+    "dimGuide": "主栏 632 px · 唱片区 160×160 px",
+    "dimRecent": "行高 140 px · 缩略图 181×68 px",
+    "dimBadge": "{{layout}} · 6 列 · 间距 12 px",
+    "dimCustom": "高度随内容 · 文本区最小约 100 px",
+    "dimAdd": "无固定导出尺寸 · 与编辑面板一致",
+    "skeletonOpacity": "骨架不透明度",
+    "glassOpacity": "压暗层",
+    "exportGuide": "导出参考图 (PNG)",
+    "exportGuideBusy": "导出中…",
+    "exportGuideError": "导出失败。",
+    "exportGuideNoRoot": "请先打开资料页预览以注册布局，再重试导出。"
+  },
+  "tutorial": {
+    "mode": "教程模式",
+    "currentStep": "当前步骤",
+    "completeStep": "完成当前步骤",
+    "nextStep": "下一步",
+    "exitMode": "退出教程模式",
+    "autoTracking": "系统将自动识别并完成当前步骤",
+    "progressLabel": "进度",
+    "feedback": {
+      "completed": "已完成：{{step}}"
+    },
+    "autoDescriptions": {
+      "step1": "点击上方“编辑”进入编辑模式后，本步骤会自动完成。",
+      "step2": "在编辑模式下添加或调整展柜后，本步骤会自动完成。",
+      "step3": "在这里切换背景或主题（包括自定义链接），完成后系统会标记本步骤完成。",
+      "step4": "当你进入“艺术作品”页并开始使用相关工具时，本步骤会自动完成。"
+    },
+    "steps": {
+      "step1": "进入编辑模式",
+      "step2": "添加与排序展柜",
+      "step3": "设置背景与主题",
+      "step4": "艺术作品工具"
+    },
+    "hints": {
+      "step1": "提示：点击顶部“编辑”开始设计你的首页。",
+      "step2": "提示：在编辑模式下添加徽章、艺术作品或自定义展柜。",
+      "step3": "提示：从这里开始切换背景或主题。",
+      "step4": "提示：打开左侧导航中的“艺术作品”使用视频转 GIF 等工具。"
+    }
+  },
+  "externalRedirect": {
+    "opening": "正在在浏览器中打开…"
+  },
+  "newProjectConfirm": {
+    "label": "确认操作",
+    "title": "开始新建桌面项目？",
+    "description": "当前未保存的修改将被清除，此操作无法撤销。",
+    "cancel": "取消",
+    "confirm": "开始新建"
+  }
+}

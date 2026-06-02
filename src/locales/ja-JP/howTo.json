@@ -1,0 +1,143 @@
+{
+  "meta": {
+    "title": "使い方ガイド｜ZoneHub",
+    "description": "Steam プロフィールカスタマイズの完全ガイド：基本設定、テーマ、ショーケースツール。"
+  },
+  "intro": {
+    "title": "🎯 はじめに",
+    "welcome": "ZoneHub へようこそ。Steam プロフィールを公開前にプレビュー・デザインできる強力なカスタマイズツールです。"
+  },
+  "quickStart": {
+    "title": "⚡ クイックスタート（3 ステップ）",
+    "steps": [
+      "ホーム右上の青い「編集」をクリックして編集モードへ",
+      "ショーケース（ワークショップ、バッジ、アートワークなど）を追加・並べ替え",
+      "アバター／背景／テーマを設定し、プレビュー後に Steam へコピー"
+    ],
+    "footnote": "各機能の詳しい説明とスクリーンショットは下記をご覧ください。"
+  },
+  "links": {
+    "title": "🔗 よく使うリンク",
+    "videoToGif": "動画→GIF ツール",
+    "artworkTools": "アートワークショーケースツール"
+  },
+  "toc": {
+    "title": "📚 目次",
+    "open": "目次を開く",
+    "close": "閉じる",
+    "backToTop": "ページ上部へ",
+    "chapterLabels": [
+      "基本設定",
+      "アバターと個性化",
+      "バッジの表示と設定",
+      "背景とテーマ",
+      "アートワークショーケースツール",
+      "テキスト書式",
+      "その他"
+    ]
+  },
+  "chapters": {
+    "ch1": {
+      "title": "基本設定",
+      "editButtonTitle": "📍 編集ボタンの位置",
+      "editButtonBody": "ページ右上の青い「編集」ボタンをクリックすると編集モードに入ります。",
+      "editModeTitle": "🎯 編集モードの機能",
+      "editModeBody": "編集モードではショーケースの追加・削除・並べ替えができます。",
+      "showcaseTypesTitle": "📦 対応ショーケース",
+      "showcaseTypesIntro": "以下のショーケースでプロフィールをカスタマイズできます。",
+      "showcaseTypesHeading": "利用可能なショーケース：",
+      "showcaseItems": [
+        "カスタムテキスト：自己紹介など",
+        "ワークショップショーケース：五分割画像のプレビュー（ローカル編集）",
+        "最近のアクティビティ：Steam 風の最新情報ショーケース",
+        "注目のアートワーク：1 枚の作品を表示",
+        "カスタムセクション：Steam と同様のテキスト領域",
+        "バッジコレクター：1×6 / 2×6 レイアウトでバッジ表示",
+        "収集したガイド（レコード）：レコード風ショーケースとプレイヤー文言のコピー"
+      ],
+      "imgEditButtonAlt": "編集ボタンの位置",
+      "imgEditButtonCaption": "編集ボタン — ページ右上の青いボタン",
+      "imgEditModeAlt": "編集モードのデモ",
+      "imgEditModeCaption": "編集モード — 編集でレイアウトを設計"
+    },
+    "ch2": {
+      "title": "アバターと個性化",
+      "personalizationTitle": "🎨 個性化",
+      "personalizationIntro": "次の個性化設定に対応しています。",
+      "personalizationHeading": "対応項目：",
+      "personalizationItems": ["カスタムアバター", "ニックネームとプロフィール紹介"],
+      "previewTitle": "📱 プレビュー",
+      "previewBody": "アバターとニックネーム設定のデモです。",
+      "imgAlt": "アバターと個性化のデモ",
+      "imgCaption": "アバターと個性化のデモ"
+    },
+    "ch3": {
+      "title": "バッジの表示と設定",
+      "headerTitle": "🏅 1. プロフィールヘッダー",
+      "headerBody": "ヘッダーのバッジ領域をクリックして BadgePicker を開きます。色グループや名前検索に対応。手順：編集モード → バッジ画像 → 検索・選択 → 確定。",
+      "pickerTitle": "🏅 2. バッジピッカーショーケース",
+      "pickerBody": "編集モードで「バッジピッカー」を追加し、クリックしてバッジを選びます。",
+      "imgProfileBadgeAlt": "プロフィールヘッダーのバッジピッカー",
+      "imgCollectorBadgeAlt": "バッジピッカーでのバッジ設定"
+    },
+    "ch4": {
+      "title": "背景とテーマ",
+      "builtinTitle": "🎨 内蔵背景とテーマ",
+      "builtinIntro": "本物の Steam プロフィールに近い見た目でデザインできるよう、多彩な背景とテーマを内蔵しています。",
+      "builtinBgHeading": "内蔵背景：",
+      "builtinBgs": ["Levia", "千夏エネルギー", "Reflection", "TOUHOU SKY ARENA", "True Panic"],
+      "videoBgHeading": "内蔵動画背景：",
+      "videoBgs": ["SPHERE", "Mushdash"],
+      "customUrlHeading": "カスタム背景／動画 URL に対応",
+      "imgAlt": "背景とテーマのデモ",
+      "imgCaption": "背景とテーマのデモ"
+    },
+    "ch5": {
+      "title": "アートワークショーケースツール",
+      "videoGifTitle": "🎬 動画→GIF",
+      "videoGifIntro": "動画を五分割 GIF に変換し、Steam ワークショップへアップロードしやすくします。",
+      "featuresHeading": "機能：",
+      "features": [
+        "複数の動画形式に対応",
+        "五分割 GIF を自動生成",
+        "ワークショップ向けにファイルサイズを最適化",
+        "変換結果をリアルタイムプレビュー"
+      ],
+      "urlTitle": "🔗 URL",
+      "urlBody": "ツールのパス：",
+      "previewTitle": "📸 Steam プロフィールプレビュー",
+      "previewBody": "ZoneHub のワークショッププレビュー機能の例です。",
+      "imgAlt": "Steam プロフィールプレビュー",
+      "imgCaption": "Steam プロフィールプレビュー"
+    },
+    "ch6": {
+      "title": "テキスト書式",
+      "tagsTitle": "🎛 利用可能なタグ（ProfileRichText）",
+      "tagsIntro": "コメント、カスタムセクション、プロフィール紹介などで次のタグが使えます：",
+      "tags": [
+        { "code": "[h1]見出し[/h1]", "label": "見出し" },
+        { "code": "[b]太字[/b]", "label": "太字" },
+        { "code": "[u]下線[/u]", "label": "下線" },
+        { "code": "[i]斜体[/i]", "label": "斜体" },
+        { "code": "[strike]取り消し線[/strike]", "label": "取り消し線" },
+        { "code": "[spoiler]隠しテキスト[/spoiler]", "label": "隠しテキスト（クリックで表示）" },
+        { "code": "[noparse]解析しない[b]タグ[/b][/noparse]", "label": "内部タグを解析しない" },
+        { "code": "[hr][/hr]", "label": "水平線" },
+        { "code": "[url=store.steampowered.com]リンク[/url]", "label": "リンク" },
+        { "code": "[quote=author]引用[/quote]", "label": "引用" },
+        { "code": "[code]等幅・空白保持[/code]", "label": "等幅・空白保持" }
+      ],
+      "hrOr": "または"
+    },
+    "ch7": {
+      "title": "その他",
+      "wipTitle": "🚧 開発中",
+      "wipBody": "開発者が更新中です。お楽しみに！"
+    }
+  },
+  "support": {
+    "freeNote": "ZoneHub は現在完全無料です。このプロジェクトが気に入ったら、開発のサポートをお願いします。",
+    "viewSupportCta": "スポンサーと支援を見る",
+    "viewSupportHint": "スポンサーウォールと Afdian"
+  }
+}

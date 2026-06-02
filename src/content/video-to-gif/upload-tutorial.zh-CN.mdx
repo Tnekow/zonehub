@@ -1,0 +1,36 @@
+import { CopyCodeBlock } from '../../components/mdx/CopyCodeBlock';
+
+export const stepTitle = '第四步：Steam创意工坊上传教程';
+
+const anonymousCode = `v_trim=_=>{return _},$J('#title').val(' \\n'+Array.from(Array(126),_=>'\\t').join(''));`;
+const artworkCode = `$J('#ConsumerAppID').val(480),$J('[name=file_type]').val(0),$J('[name=visibility]').val(0);`;
+
+<div className="space-y-6 not-prose">
+  <div className="p-4 bg-blue-900/20 border border-blue-500/30 rounded">
+    <p className="text-blue-400 text-sm font-medium mb-2">📋 上传步骤</p>
+    <ol className="text-blue-300 text-sm space-y-2 list-decimal list-inside">
+      <li>访问 <a href="https://steamcommunity.com/sharedfiles/edititem/767/3/" className="text-blue-200 underline hover:text-blue-100">Steam创意工坊编辑页面</a></li>
+      <li>按 F12 打开开发者工具</li>
+      <li>在控制台中依次执行以下代码</li>
+    </ol>
+  </div>
+
+  <div className="space-y-2">
+    <h4 className="text-steam-textPrimary font-medium">🎭 无名代码（隐藏作品名）</h4>
+    <CopyCodeBlock label="无名代码" code={anonymousCode} copyLabel="复制" copiedLabel="已复制" />
+    <p className="text-steam-textMuted text-xs">执行此代码后，作品标题将被隐藏</p>
+  </div>
+
+  <div className="space-y-2">
+    <h4 className="text-steam-textPrimary font-medium">🎨 艺术作品代码（设置尺寸）</h4>
+    <CopyCodeBlock label="艺术作品代码" code={artworkCode} copyLabel="复制" copiedLabel="已复制" />
+    <p className="text-steam-textMuted text-xs">设置图片宽度为 1000px，高度为 1px，实现水平滚动效果</p>
+  </div>
+
+  <div className="p-4 bg-green-900/20 border border-green-500/30 rounded">
+    <p className="text-green-400 text-sm font-medium mb-2">✅ 完成提示</p>
+    <p className="text-green-300 text-sm">
+      执行完代码后，上传您的五等分 GIF 文件，即可在 Steam 个人资料中显示为艺术作品！
+    </p>
+  </div>
+</div>

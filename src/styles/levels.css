@@ -1,0 +1,126 @@
+/* Steam 官方等级样式 - 参考 https://blog.ninc.top/posts/cheat-sheet/steam-badge */
+
+/* 基础等级样式 */
+.level-base {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffffff;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* ========== 0-99级：圆形边框样式 ========== */
+
+/* 0-9: 灰色 */
+.level-color-0 { border-color: #9b9b9b; }
+/* 10-19: 红色 */
+.level-color-1 { border-color: #c02942; }
+/* 20-29: 橙色 */
+.level-color-2 { border-color: #d95b43; }
+/* 30-39: 黄色 */
+.level-color-3 { border-color: #fecc23; }
+/* 40-49: 绿色 */
+.level-color-4 { border-color: #467a3c; }
+/* 50-59: 蓝色 */
+.level-color-5 { border-color: #4e8ddb; }
+/* 60-69: 紫色 */
+.level-color-6 { border-color: #7652c9; }
+/* 70-79: 粉色 */
+.level-color-7 { border-color: #c252c9; }
+/* 80-89: 金色（细边框） */
+.level-color-8 { border-color: #997c52; }
+/* 90-99: 金色（细边框） */
+.level-color-9 { border-color: #997c52; }
+
+/* 0-99: 圆形外框样式 */
+.level-circle {
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+/* 细边框样式（80-99等级） */
+.level-circle.thin-border {
+  border-width: 1px;
+}
+
+/* ========== 100+级：精灵图背景样式 ========== */
+
+/* 100+级使用精灵图背景 - 与Steam官方一致的命名规范 */
+.level-sprite {
+  /* 使用本地精灵图资源避免CORS限制 */
+  background-image: url('/images/badges/level_sprites.png');
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 0;
+  font-size: 12px;
+}
+
+/* 100-199级 */
+.level-sprite.lvl_100.lvl_plus_0 { background-position: 0px 0px; }
+.level-sprite.lvl_100.lvl_plus_10 { background-position: 0px -32px; }
+.level-sprite.lvl_100.lvl_plus_20 { background-position: 0px -64px; }
+.level-sprite.lvl_100.lvl_plus_30 { background-position: 0px -96px; }
+.level-sprite.lvl_100.lvl_plus_40 { background-position: 0px -128px; }
+.level-sprite.lvl_100.lvl_plus_50 { background-position: 0px -160px; }
+.level-sprite.lvl_100.lvl_plus_60 { background-position: 0px -192px; }
+.level-sprite.lvl_100.lvl_plus_70 { background-position: 0px -224px; }
+.level-sprite.lvl_100.lvl_plus_80 { background-position: 0px -256px; }
+.level-sprite.lvl_100.lvl_plus_90 { background-position: 0px -288px; }
+
+/* 200-299级 */
+.level-sprite.lvl_200.lvl_plus_0 { background-position: -32px 0px; }
+.level-sprite.lvl_200.lvl_plus_10 { background-position: -32px -32px; }
+.level-sprite.lvl_200.lvl_plus_20 { background-position: -32px -64px; }
+.level-sprite.lvl_200.lvl_plus_30 { background-position: -32px -96px; }
+.level-sprite.lvl_200.lvl_plus_40 { background-position: -32px -128px; }
+.level-sprite.lvl_200.lvl_plus_50 { background-position: -32px -160px; }
+.level-sprite.lvl_200.lvl_plus_60 { background-position: -32px -192px; }
+.level-sprite.lvl_200.lvl_plus_70 { background-position: -32px -224px; }
+.level-sprite.lvl_200.lvl_plus_80 { background-position: -32px -256px; }
+.level-sprite.lvl_200.lvl_plus_90 { background-position: -32px -288px; }
+
+/* 300-399级 */
+.level-sprite.lvl_300.lvl_plus_0 { background-position: -64px 0px; }
+.level-sprite.lvl_300.lvl_plus_10 { background-position: -64px -32px; }
+.level-sprite.lvl_300.lvl_plus_20 { background-position: -64px -64px; }
+.level-sprite.lvl_300.lvl_plus_30 { background-position: -64px -96px; }
+.level-sprite.lvl_300.lvl_plus_40 { background-position: -64px -128px; }
+.level-sprite.lvl_300.lvl_plus_50 { background-position: -64px -160px; }
+.level-sprite.lvl_300.lvl_plus_60 { background-position: -64px -192px; }
+.level-sprite.lvl_300.lvl_plus_70 { background-position: -64px -224px; }
+.level-sprite.lvl_300.lvl_plus_80 { background-position: -64px -256px; }
+.level-sprite.lvl_300.lvl_plus_90 { background-position: -64px -288px; }
+
+/* 400-499级 */
+.level-sprite.lvl_400.lvl_plus_0 { background-position: -96px 0px; }
+.level-sprite.lvl_400.lvl_plus_10 { background-position: -96px -32px; }
+.level-sprite.lvl_400.lvl_plus_20 { background-position: -96px -64px; }
+.level-sprite.lvl_400.lvl_plus_30 { background-position: -96px -96px; }
+.level-sprite.lvl_400.lvl_plus_40 { background-position: -96px -128px; }
+.level-sprite.lvl_400.lvl_plus_50 { background-position: -96px -160px; }
+.level-sprite.lvl_400.lvl_plus_60 { background-position: -96px -192px; }
+.level-sprite.lvl_400.lvl_plus_70 { background-position: -96px -224px; }
+.level-sprite.lvl_400.lvl_plus_80 { background-position: -96px -256px; }
+.level-sprite.lvl_400.lvl_plus_90 { background-position: -96px -288px; }
+
+/* 500-599级 */
+.level-sprite.lvl_500.lvl_plus_0 { background-position: -128px 0px; }
+.level-sprite.lvl_500.lvl_plus_10 { background-position: -128px -32px; }
+.level-sprite.lvl_500.lvl_plus_20 { background-position: -128px -64px; }
+.level-sprite.lvl_500.lvl_plus_30 { background-position: -128px -96px; }
+.level-sprite.lvl_500.lvl_plus_40 { background-position: -128px -128px; }
+.level-sprite.lvl_500.lvl_plus_50 { background-position: -128px -160px; }
+.level-sprite.lvl_500.lvl_plus_60 { background-position: -128px -192px; }
+.level-sprite.lvl_500.lvl_plus_70 { background-position: -128px -224px; }
+.level-sprite.lvl_500.lvl_plus_80 { background-position: -128px -256px; }
+.level-sprite.lvl_500.lvl_plus_90 { background-position: -128px -288px; }
+
+/* 600+级简化处理（循环使用500级样式） */
+.level-sprite.lvl_600.lvl_plus_0 { background-position: -128px 0px; }

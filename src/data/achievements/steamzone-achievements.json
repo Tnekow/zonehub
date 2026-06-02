@@ -1,0 +1,70 @@
+[
+  {
+    "id": "desktop_first_mode_switch",
+    "category": "desktop",
+    "name": {
+      "zh-CN": "施工重地，闲人免进",
+      "en-US": "Under Construction"
+    },
+    "description": {
+      "zh-CN": "首次切入编辑模式。退后，我要开始发力了。",
+      "en-US": "Entered Edit mode for the first time. Stand back, serious work starts now."
+    },
+    "trigger": {
+      "type": "client_event",
+      "event": "desktop.edit_mode_entered_first_time",
+      "condition": "Fire once when user enters edit mode for the first time."
+    }
+  },
+  {
+    "id": "desktop_first_showcase_added",
+    "category": "editing",
+    "name": {
+      "zh-CN": "赛博手办柜",
+      "en-US": "Pimp My Profile"
+    },
+    "description": {
+      "zh-CN": "在编辑模式下第一次新增展柜。大就是好，多就是美！",
+      "en-US": "Added your first showcase in Edit mode. Bigger is better."
+    },
+    "trigger": {
+      "type": "client_event",
+      "event": "desktop.showcase.added.first_time",
+      "condition": "Fire once when user adds any new editable showcase component in edit mode."
+    }
+  },
+  {
+    "id": "desktop_first_collected_guide_showcase",
+    "category": "editing",
+    "name": {
+      "zh-CN": "深夜网抑云",
+      "en-US": "Vinyl Hipster"
+    },
+    "description": {
+      "zh-CN": "第一次创建“收藏的指南（唱片）”展柜。",
+      "en-US": "Created the Collected Guide (vinyl) showcase for the first time."
+    },
+    "trigger": {
+      "type": "client_event",
+      "event": "desktop.collected_guide_showcase.created.first_time",
+      "condition": "Fire once when collectedGuideShowcase is added for the first time."
+    }
+  },
+  {
+    "id": "desktop_first_new_canvas",
+    "category": "desktop",
+    "name": {
+      "zh-CN": "白茫茫大地真干净",
+      "en-US": "Tabula Rasa"
+    },
+    "description": {
+      "zh-CN": "点击“新建桌面画布”并清空当前设计。",
+      "en-US": "Clicked New Desktop Canvas and reset the current design."
+    },
+    "trigger": {
+      "type": "client_event",
+      "event": "desktop.new_canvas.clicked_first_time",
+      "condition": "Fire once when user clicks New Desktop Canvas for the first time."
+    }
+  }
+]

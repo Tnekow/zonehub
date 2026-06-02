@@ -1,0 +1,120 @@
+{
+  "header": {
+    "title": "ZoneHub",
+    "subtitle": "Profile Design Engine",
+    "connectedAs": "Connected as {{name}}",
+    "workspaceLabel": "Design Engine Workspace"
+  },
+  "panel": {
+    "desktopPanel": "Engine Panel",
+    "language": "Language",
+    "desktopFeatures": "Desktop Features",
+    "desktopNav": "Desktop Navigation",
+    "sessionNotes": "Session Notes",
+    "sessionNotesText": "Keep this panel expanded for layout actions, background, and theme tools. Collapse it when you want a cleaner editing surface.",
+    "moveToExpand": "Move to expand"
+  },
+  "achievementToast": {
+    "unlockedTitle": "Achievement Unlocked"
+  },
+  "nav": {
+    "home": "Home",
+    "artwork": "Showcase Assistant",
+    "guides": "Guides",
+    "tutorial": "Tutorial",
+    "workspace": "Workspace",
+    "currentRoute": "Current Route"
+  },
+  "actions": {
+    "newDesktopProject": "New desktop project",
+    "backgroundSettings": "Background settings",
+    "profileTheme": "Profile theme",
+    "edit": "Edit",
+    "exitEdit": "Exit edit",
+    "chooseBackground": "Choose background",
+    "customBackgroundUrl": "Custom background URL",
+    "imageOrVideoUrl": "Image or video URL. Applied and panel will close.",
+    "chooseProfileTheme": "Choose profile theme",
+    "applyButton": "Apply"
+  },
+  "marketingSafePreview": {
+    "sectionTitle": "Blueprint mode",
+    "label": "Blueprint preview",
+    "description": "Shows a blueprint-style layout instead of the default preview. Editing and your data stay the same.",
+    "enabledHint": "Blueprint preview is active — turn it off in the engine panel anytime.",
+    "fabExit": "Exit blueprint"
+  },
+  "blueprint": {
+    "hintProfile": "Identity & summary",
+    "hintMedia": "Drop artwork or media here",
+    "hintRow": "Featured row layout",
+    "hintMatrix": "Badge or icon grid",
+    "hintBlock": "Custom content block",
+    "hintSidebar": "Sidebar widgets",
+    "hintThread": "Activity thread",
+    "hintAdd": "Add a showcase module",
+    "hintWorkshop": "Workshop item strip",
+    "hintFeaturedArt": "Featured artwork + side strip",
+    "hintCuratedArt": "Framed curated artwork",
+    "hintGuideDeck": "Guide record + copy column",
+    "hintActivity": "Latest status / activity",
+    "ariaProfile": "Profile header layout",
+    "ariaThread": "Activity thread layout",
+    "ariaSidebar": "Sidebar widgets layout",
+    "ariaActivity": "Sidebar activity status layout",
+    "ariaAdd": "Add showcase module panel",
+    "dimWorkshop": "Card height 400 px · column width = (inner row − gaps) ÷ item count",
+    "dimCurated": "Frame gap 10 px · image scales to inner box",
+    "dimGuide": "Main column 632 px · record area 160×160 px",
+    "dimRecent": "Row 140 px · thumb 181×68 px",
+    "dimBadge": "{{layout}} · 6 columns · gap 12 px",
+    "dimCustom": "Fluid height · min textarea 100 px",
+    "dimAdd": "No fixed export size · matches edit panel",
+    "skeletonOpacity": "Skeleton overlay",
+    "glassOpacity": "Dim layer",
+    "exportGuide": "Export guide (PNG)",
+    "exportGuideBusy": "Exporting…",
+    "exportGuideError": "Export failed.",
+    "exportGuideNoRoot": "Open the profile preview so the layout registers, then try again."
+  },
+  "tutorial": {
+    "mode": "Tutorial Mode",
+    "currentStep": "Current step",
+    "completeStep": "Complete step",
+    "nextStep": "Next step",
+    "exitMode": "Exit tutorial mode",
+    "autoTracking": "Steps are tracked and completed automatically",
+    "progressLabel": "Progress",
+    "feedback": {
+      "completed": "Completed: {{step}}"
+    },
+    "autoDescriptions": {
+      "step1": "Click \"Edit\" at the top to enter edit mode; this step completes automatically.",
+      "step2": "Add or rearrange showcases in edit mode to complete this step.",
+      "step3": "Change background or theme here (including custom URLs); this step completes after a change.",
+      "step4": "Open the Artwork page and use its tools to complete this step."
+    },
+    "steps": {
+      "step1": "Enter edit mode",
+      "step2": "Add and order showcases",
+      "step3": "Set background and theme",
+      "step4": "Artwork tools"
+    },
+    "hints": {
+      "step1": "Hint: click \"Edit\" at the top to start designing your profile.",
+      "step2": "Hint: in edit mode, add badge, artwork, or custom showcases.",
+      "step3": "Hint: change background or theme from here.",
+      "step4": "Hint: open Artwork in the left nav for Video-to-GIF and more."
+    }
+  },
+  "externalRedirect": {
+    "opening": "Opening in your browser…"
+  },
+  "newProjectConfirm": {
+    "label": "Confirm Action",
+    "title": "Start new desktop project?",
+    "description": "Your current unsaved changes will be cleared. This action cannot be undone.",
+    "cancel": "Cancel",
+    "confirm": "Start New Project"
+  }
+}

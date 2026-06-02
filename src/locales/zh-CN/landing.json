@@ -1,0 +1,20 @@
+{
+  "topBar": {
+    "viewing": "你正在浏览新版首页。",
+    "switchBack": "切换回经典编辑器"
+  },
+  "hero": {
+    "badge": "离线 Steam 个人主页编辑器",
+    "title1": "在本地设计你的 Steam 个人主页，",
+    "title2": "配置保存在浏览器，无需联网。",
+    "subtitle": "高保真还原 Steam 资料页布局，支持本地编辑、导出与自定义背景（https / blob / data URL）。",
+    "openEditor": "打开编辑器",
+    "noInstall": "无需登录或安装，打开即可开始编辑；所有配置保存在本机。"
+  },
+  "tutorials": {
+    "title": "教程与指南",
+    "desc": "入门说明与社区精选链接（只读，不依赖创作者中心）。",
+    "readMore": "阅读更多",
+    "empty": "暂无教程内容"
+  }
+}

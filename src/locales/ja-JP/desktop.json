@@ -1,0 +1,120 @@
+{
+  "header": {
+    "title": "ZoneHub",
+    "subtitle": "プロフィールデザインエンジン",
+    "connectedAs": "接続中：{{name}}",
+    "workspaceLabel": "デザインエンジンワークスペース"
+  },
+  "panel": {
+    "desktopPanel": "エンジンパネル",
+    "language": "言語",
+    "desktopFeatures": "デスクトップ機能",
+    "desktopNav": "デスクトップナビ",
+    "sessionNotes": "セッション説明",
+    "sessionNotesText": "背景・テーマ・レイアウト操作にはパネルを展開してください。編集エリアを広げたい時は折りたたんでください。",
+    "moveToExpand": "移動で展開"
+  },
+  "achievementToast": {
+    "unlockedTitle": "実績を解除しました"
+  },
+  "nav": {
+    "home": "ホーム",
+    "artwork": "ショーケースアシスタント",
+    "guides": "ガイド",
+    "tutorial": "チュートリアル",
+    "workspace": "ワークスペース",
+    "currentRoute": "現在のルート"
+  },
+  "actions": {
+    "newDesktopProject": "新規デスクトッププロジェクト",
+    "backgroundSettings": "背景設定",
+    "profileTheme": "プロフィールテーマ",
+    "edit": "編集",
+    "exitEdit": "編集を終了",
+    "chooseBackground": "背景を選択",
+    "customBackgroundUrl": "カスタム背景URL",
+    "imageOrVideoUrl": "画像または動画URL。適用後にパネルを閉じます。",
+    "chooseProfileTheme": "プロフィールテーマを選択",
+    "applyButton": "適用"
+  },
+  "marketingSafePreview": {
+    "sectionTitle": "ブループリント",
+    "label": "ブループリント表示",
+    "description": "設計図風のレイアウトでプレビューします。編集とデータはそのままです。",
+    "enabledHint": "ブループリントプレビューが有効です。左のパネルからいつでもオフにできます。",
+    "fabExit": "ブループリントを終了"
+  },
+  "blueprint": {
+    "hintProfile": "プロフィールと概要",
+    "hintMedia": "作品・メディアをここに",
+    "hintRow": "横並びの行レイアウト",
+    "hintMatrix": "バッジ・アイコングリッド",
+    "hintBlock": "カスタムコンテンツブロック",
+    "hintSidebar": "サイドバーウィジェット",
+    "hintThread": "アクティビティスレッド",
+    "hintAdd": "ショーケースを追加",
+    "hintWorkshop": "ワークショップ展示ストリップ",
+    "hintFeaturedArt": "メイン作品＋サイドストリップ",
+    "hintCuratedArt": "額縁風の厳選作品",
+    "hintGuideDeck": "レコード＋テキスト列",
+    "hintActivity": "最新ステータス・アクティビティ",
+    "ariaProfile": "プロフィールヘッダー領域",
+    "ariaThread": "コメント・スレッド領域",
+    "ariaSidebar": "サイドバーウィジェット領域",
+    "ariaActivity": "サイドバーアクティビティ領域",
+    "ariaAdd": "ショーケース追加パネル",
+    "dimWorkshop": "カード高さ 400 px · 列幅 =（行の内幅 − ギャップ）÷ 個数",
+    "dimCurated": "額縁ギャップ 10 px · 画像は内側に合わせてスケール",
+    "dimGuide": "主カラム 632 px · レコード領域 160×160 px",
+    "dimRecent": "行の高さ 140 px · サムネ 181×68 px",
+    "dimBadge": "{{layout}} · 6 列 · ギャップ 12 px",
+    "dimCustom": "高さは可変 · テキスト最小約 100 px",
+    "dimAdd": "固定エクスポートサイズなし · 編集パネルに準拠",
+    "skeletonOpacity": "スケルトン透明度",
+    "glassOpacity": "暗幕レイヤー",
+    "exportGuide": "ガイドを PNG で書き出し",
+    "exportGuideBusy": "書き出し中…",
+    "exportGuideError": "書き出しに失敗しました。",
+    "exportGuideNoRoot": "プロフィールプレビューを開いてレイアウトを登録してから再試行してください。"
+  },
+  "tutorial": {
+    "mode": "チュートリアルモード",
+    "currentStep": "現在のステップ",
+    "completeStep": "このステップを完了",
+    "nextStep": "次のステップ",
+    "exitMode": "チュートリアルを終了",
+    "autoTracking": "ステップは自動で判定・完了されます",
+    "progressLabel": "進捗",
+    "feedback": {
+      "completed": "完了：{{step}}"
+    },
+    "autoDescriptions": {
+      "step1": "上部の「編集」をクリックして編集モードに入ると、このステップは自動で完了します。",
+      "step2": "編集モードでショーケースを追加・並べ替えると完了します。",
+      "step3": "ここで背景やテーマ（カスタム URL 含む）を変更すると完了になります。",
+      "step4": "アートワークページを開き、ツールを使うとこのステップが完了します。"
+    },
+    "steps": {
+      "step1": "編集モードに入る",
+      "step2": "ショーケースを追加・並べ替え",
+      "step3": "背景とテーマ設定",
+      "step4": "アートワークツール"
+    },
+    "hints": {
+      "step1": "ヒント：上部の「編集」を押してホームをデザインしましょう。",
+      "step2": "ヒント：編集モードでバッジ、アートワーク、カスタムショーケースなどを追加します。",
+      "step3": "ヒント：ここから背景やテーマを切り替えます。",
+      "step4": "ヒント：左ナビの「アートワーク」で動画→GIF などが使えます。"
+    }
+  },
+  "externalRedirect": {
+    "opening": "ブラウザで開いています…"
+  },
+  "newProjectConfirm": {
+    "label": "確認操作",
+    "title": "新しいデスクトッププロジェクトを開始しますか？",
+    "description": "現在の未保存の変更は消去されます。この操作は取り消せません。",
+    "cancel": "キャンセル",
+    "confirm": "新規プロジェクト開始"
+  }
+}
