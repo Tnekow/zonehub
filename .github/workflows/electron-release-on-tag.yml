@@ -7,9 +7,9 @@ on:
   workflow_dispatch:
     inputs:
       tag:
-        description: Existing tag to release (for manual rerun)
-        required: false
-        default: ""
+        description: Existing v* tag to build and release (required for manual runs)
+        required: true
+        type: string
 
 permissions:
   contents: write
@@ -19,13 +19,33 @@ jobs:
     runs-on: windows-latest
     env:
       NODE_VERSION: "22"
+      HUSKY: "0"
+      CSC_IDENTITY_AUTO_DISCOVERY: "false"
 
     steps:
+      - name: Resolve release tag
+        id: release_tag
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            TAG="${{ inputs.tag }}"
+          else
+            TAG="${GITHUB_REF_NAME}"
+          fi
+
+          if [[ ! "$TAG" =~ ^v ]]; then
+            echo "Release tag must match v* (got: $TAG)."
+            exit 1
+          fi
+
+          echo "value=$TAG" >> "$GITHUB_OUTPUT"
+          echo "Using release tag: $TAG"
+
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          ref: ${{ inputs.tag != '' && format('refs/tags/{0}', inputs.tag) || github.ref }}
+          ref: refs/tags/${{ steps.release_tag.outputs.value }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -36,25 +56,27 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      # electron-builder --publish never (in package.json) — Release upload is done by action-gh-release below, not electron-builder.
       - name: Build and package
         run: npm run electron:build
 
-      - name: Resolve release tag
-        id: release_tag
+      - name: Verify installer artifact
         shell: bash
         run: |
-          if [ -n "${{ inputs.tag }}" ]; then
-            echo "value=${{ inputs.tag }}" >> "$GITHUB_OUTPUT"
-          else
-            echo "value=${GITHUB_REF_NAME}" >> "$GITHUB_OUTPUT"
+          shopt -s nullglob
+          files=(dist/ZoneHub\ Setup\ *.exe)
+          if [ ${#files[@]} -eq 0 ]; then
+            echo "No installer found under dist/. Contents:"
+            ls -la dist || true
+            exit 1
           fi
+          printf 'Installer: %s\n' "${files[@]}"
 
       - name: Create or update GitHub Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.release_tag.outputs.value }}
+          name: ZoneHub ${{ steps.release_tag.outputs.value }}
           generate_release_notes: true
-          files: |
-            dist/ZoneHub Setup *.exe
-            dist/ZoneHub Setup *.exe.blockmap
-            dist/latest.yml
+          fail_on_unmatched_files: true
+          files: dist/ZoneHub Setup *.exe

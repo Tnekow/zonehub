@@ -1,124 +1,94 @@
+![ZoneHub Banner](public/images/banner.png)
+
 # ZoneHub
 
-ZoneHub 是一个离线优先（offline-first）的社区风格个人资料页设计器，基于 Vite、React 和 TypeScript 构建。项目提供高还原度的 Steam 风格版式参考界面，所有内容在本机编辑与保存，无需 Steam 账号或 API。
+*在本地设计 Steam 风格个人主页 — 无需登录，配置保存在本机。*
 
-语言：简体中文 | [English (default)](README.md)
+[![Release](https://img.shields.io/github/v/release/Tnekow/zonehub?label=release)](https://github.com/Tnekow/zonehub/releases)
+[![License](https://img.shields.io/github/license/Tnekow/zonehub)](LICENSE)
+[![Node](https://img.shields.io/badge/node-%3E%3D22-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
+[![Platform](https://img.shields.io/badge/platform-Windows-0078D4?logo=windows&logoColor=white)](https://github.com/Tnekow/zonehub/releases)
+[![Stars](https://img.shields.io/github/stars/Tnekow/zonehub?style=social)](https://github.com/Tnekow/zonehub/stargazers)
 
-## 亮点
+语言：简体中文 | [English](README.md)
 
-- 离线优先：核心编辑流程不依赖后端服务。
-- 高还原社区风格资料页展示（仅视觉参考，不连接 Steam）。
-- 实时编辑，并通过 `localStorage` 自动持久化。
-- 支持主题自定义与自定义背景。
-- 支持视频背景和视频转 GIF 工作流。
-- 支持 Electron 桌面端打包。
-- 内置多语言（`zh-CN`、`en-US`、`ja-JP`）。
+ZoneHub 是一款**离线优先的 Electron 桌面应用**，用于设计高还原度的 Steam 风格个人资料页。头像、昵称、展柜、徽章、主题与背景媒体均在本机编辑与保存，无需 Steam 账号或 API。
 
-## 技术栈
+![功能演示：拖拽展柜、动态背景、导出](public/images/ce7d8fe8-152c-424d-94cd-9f261d8b3db2.gif)
 
-- Vite
-- React 19
-- TypeScript
-- Tailwind CSS
-- React Router
-- i18next
-- Electron + electron-builder
+*拖拽展柜 → 应用动态背景 → 导出布局。*
 
-## 环境要求
+## 功能亮点
 
-- Node.js `>=22`
-- npm `>=10`
+- **离线优先** — 核心编辑流程不依赖后端。
+- **Steam 风格布局** — 高还原资料页展示（仅视觉参考，不连接 Steam）。
+- **拖拽编辑展柜** — 自定义区块、艺术品、徽章、创意工坊条等多种展柜类型。
+- **主题与背景** — 预设主题 + 自定义图片/视频 URL（`https`、`blob`、`data`）。
+- **视频背景 & 视频转 GIF** — 内置动图背景工作流。
+- **配置导入/导出** — 通过本地存储保存与恢复布局。
+- **Electron 桌面端** — 主要开发与使用方式（Windows）。
+- **多语言** — `zh-CN`、`en-US`、`ja-JP`。
 
 ## 快速开始
 
+### 下载（推荐）
+
+从 [GitHub Releases](https://github.com/Tnekow/zonehub/releases) 下载最新 Windows 安装包（`ZoneHub Setup *.exe`）。
+
+### 从源码运行（开发者）
+
+**环境要求：** Node.js `>=22`，npm `>=10`
+
 ```bash
 npm install
-npm run dev
+npm run electron:dev
 ```
 
-浏览器打开 `http://localhost:5173`。
+该命令会启动 Vite 开发服务器并打开 **Electron** 桌面壳，入口为 `/desktop`。ZoneHub 以 Electron 为主要开发与测试方式 — 日常开发与 Issue 反馈请使用此命令。
 
-## 可用脚本
-
-- `npm run dev` - 启动 Web 开发服务器。
-- `npm run build` - 构建 Web 生产版本。
-- `npm run preview` - 本地预览生产构建结果。
-- `npm run lint` - 运行 ESLint 检查。
-- `npm run electron:dev` - 启动 Electron 开发模式。
-- `npm run electron:build` - 构建 Electron 发布包。
-- `npm run badges:sync-assets` - 同步离线徽章资源。
-
-## Offline OSS 说明
-
-当前仓库已面向离线开源场景整理：
-
-- 已移除 Creator/账号/发布等在线依赖。
-- 应用功能默认依赖本地数据与本地存储。
-- 使用 `.env.example` 作为可选开关模板（无需再通过环境变量配置 AppID）。
-- 自定义背景 URL 仅允许 `https`、`blob`、`data` 协议。
-
-如果克隆后缺少徽章资源：
+### 构建安装包
 
 ```bash
-npm run badges:sync-assets
+npm run electron:build
 ```
 
-## 项目结构
+产物：`dist/ZoneHub Setup *.exe`
 
-```text
-src/
-  components/      # UI 组件
-  pages/           # 路由页面
-  routes/          # 路由定义
-  content/         # MDX 内容模块
-  data/            # 静态数据
-  hooks/           # 自定义 hooks
-  locales/         # i18n 语言资源
-electron/
-  main/            # Electron 主进程
-docs/              # 项目与架构文档
-public/            # 静态资源
-scripts/           # 构建与工具脚本
-```
+> **网页 dev 模式（实验性）：** `npm run dev` 启动 Vite 后默认地址是 `http://127.0.0.1:5173/`，根路径 `/` **不是**应用入口，ZoneHub 仅挂载在 `/desktop`。`npm run electron:dev` 会自动打开 `/desktop`；若用浏览器访问，需手动进入该路径。纯网页模式还可能有渲染或功能差异，**推荐始终使用 `npm run electron:dev`**。
 
-## 文档
+<details>
+<summary>离线说明</summary>
 
-详细文档见 `docs/README.md`，包括：
+- 无在线账号或发布依赖，数据保存在本机 localStorage。
+- 自定义背景 URL 仅允许 `https`、`blob`、`data` 协议。
+- 克隆后若缺少徽章资源：`npm run badges:sync-assets`
 
-- 项目概览
-- 技术架构
-- 主题系统
-- 国际化
-- 组件开发指南
-- 部署与维护指南
+</details>
 
-## 贡献
+## 截图画廊
 
-欢迎提交 Issue 和 Pull Request。
+不同主题与背景下的成品效果：
 
-推荐流程：
+![主题画廊](public/images/gallery-themes.png)
 
-1. Fork 本仓库。
-2. 创建功能分支。
-3. 运行 `npm run lint` 并确保构建通过。
-4. 发起 PR，说明改动动机与测试结果。
+## 技术栈
 
-## CI 工作流
-
-- `electron-package-windows.yml` - 在 CI 中构建 Windows Electron 安装包。
-- `electron-release-on-tag.yml` - 在打 tag 时发布 Electron Release 产物。
-
-Git hooks：
-
-- `npm install` 会安装 Husky，并启用 pre-commit lint。
-- `npm run install:no-steam` 使用 `--ignore-scripts`，不会安装 hooks。
+Vite · React 19 · TypeScript · Tailwind CSS · React Router · i18next · Electron
 
 ## 许可证
 
-本项目使用 GNU Affero General Public License v3.0 only。
+本项目使用 **GNU Affero General Public License v3.0 only**（`AGPL-3.0-only`）。完整文本见 [LICENSE](LICENSE)。
 
-- SPDX 标识：`AGPL-3.0-only`
-- 完整文本：`LICENSE`
+## 致谢
+
+- 赞助者：[朏朏Moonek0](https://steamcommunity.com/profiles/76561198933108580/)
+- 社区：[Discord](https://discord.gg/qpunvXZTvA)
+- 支持开发：[爱发电](https://afdian.com/a/kuroiuz)
+
+## 反馈与贡献
+
+- Bug 与功能建议：[GitHub Issues](https://github.com/Tnekow/zonehub/issues)
+- 欢迎贡献：Fork → 分支 → `npm run lint` → 发起 PR 并说明动机与测试结果。
 
 ## 免责声明
 

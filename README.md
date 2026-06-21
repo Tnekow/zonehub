@@ -1,124 +1,94 @@
+![ZoneHub Banner](public/images/banner.png)
+
 # ZoneHub
 
-ZoneHub is an offline-first community profile page designer built with Vite, React, and TypeScript. It provides a high-fidelity Steam-style profile layout that you customize entirely on your device—avatar, nickname, showcases, badges, themes, and background media—with no Steam account or API required.
+*Design your Steam-style profile locally — no sign-in, configs stay on your device.*
 
-Language: English (default) | [简体中文](README.zh-CN.md)
+[![Release](https://img.shields.io/github/v/release/Tnekow/zonehub?label=release)](https://github.com/Tnekow/zonehub/releases)
+[![License](https://img.shields.io/github/license/Tnekow/zonehub)](LICENSE)
+[![Node](https://img.shields.io/badge/node-%3E%3D22-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
+[![Platform](https://img.shields.io/badge/platform-Windows-0078D4?logo=windows&logoColor=white)](https://github.com/Tnekow/zonehub/releases)
+[![Stars](https://img.shields.io/github/stars/Tnekow/zonehub?style=social)](https://github.com/Tnekow/zonehub/stargazers)
 
-## Highlights
+Language: English | [简体中文](README.zh-CN.md)
 
-- Offline-first: no backend required for core editing flows.
-- High-fidelity community-style profile presentation (visual reference only; not linked to Steam).
-- Real-time editing with local persistence (`localStorage`).
-- Theme customization and custom background support.
-- Video background and video-to-GIF workflow support.
-- Desktop build support via Electron.
-- Built-in i18n (`zh-CN`, `en-US`, `ja-JP`).
+ZoneHub is an **offline-first Electron desktop app** for designing high-fidelity Steam-style profile pages. Customize avatar, nickname, showcases, badges, themes, and background media entirely on your device — no Steam account or API required.
 
-## Tech Stack
+![Feature demo: drag showcases, dynamic background, export](public/images/ce7d8fe8-152c-424d-94cd-9f261d8b3db2.gif)
 
-- Vite
-- React 19
-- TypeScript
-- Tailwind CSS
-- React Router
-- i18next
-- Electron + electron-builder
+*Drag showcases → apply a dynamic background → export your layout.*
 
-## Requirements
+## Features
 
-- Node.js `>=22`
-- npm `>=10`
+- **Offline-first** — core editing flows need no backend.
+- **Steam-style layout** — high-fidelity profile presentation (visual reference only; not linked to Steam).
+- **Drag-and-drop showcases** — custom sections, artwork, badges, workshop strips, and more.
+- **Themes & backgrounds** — preset themes plus custom image/video URLs (`https`, `blob`, `data`).
+- **Video backgrounds & video-to-GIF** — built-in tooling for animated profile backgrounds.
+- **Config import/export** — save and restore layouts via local storage.
+- **Electron desktop app** — primary development and usage target on Windows.
+- **i18n** — `zh-CN`, `en-US`, `ja-JP`.
 
 ## Quick Start
 
+### Download (recommended)
+
+Get the latest Windows installer from [GitHub Releases](https://github.com/Tnekow/zonehub/releases) (`ZoneHub Setup *.exe`).
+
+### Run from source (developers)
+
+**Requirements:** Node.js `>=22`, npm `>=10`
+
 ```bash
 npm install
-npm run dev
+npm run electron:dev
 ```
 
-Open `http://localhost:5173`.
+This starts the Vite dev server and opens the **Electron** desktop shell at `/desktop`. ZoneHub is developed and tested primarily as an Electron app — use this command for day-to-day work and when reporting issues.
 
-## Available Scripts
-
-- `npm run dev` - start web development server.
-- `npm run build` - production web build.
-- `npm run preview` - preview production build locally.
-- `npm run lint` - run ESLint.
-- `npm run electron:dev` - run Electron in development mode.
-- `npm run electron:build` - build Electron distributable.
-- `npm run badges:sync-assets` - sync offline badge assets.
-
-## Offline OSS Notes
-
-This repository is prepared for offline open-source usage:
-
-- Creator/account/publish online dependencies are removed.
-- App behavior relies on local data and local storage.
-- Use `.env.example` as template for optional toggles (no AppID env required).
-- Custom background URL accepts `https`, `blob`, and `data` schemes.
-
-If badge assets are missing after clone:
+### Build installer
 
 ```bash
-npm run badges:sync-assets
+npm run electron:build
 ```
 
-## Project Structure
+Output: `dist/ZoneHub Setup *.exe`
 
-```text
-src/
-  components/      # UI components
-  pages/           # Route pages
-  routes/          # Route definitions
-  content/         # MDX content modules
-  data/            # Static data
-  hooks/           # Custom hooks
-  locales/         # i18n resources
-electron/
-  main/            # Electron main process
-docs/              # Project and architecture docs
-public/            # Static assets
-scripts/           # Build and utility scripts
-```
+> **Web dev mode (experimental):** `npm run dev` serves Vite at `http://127.0.0.1:5173/` — the root `/` is **not** the app entry. ZoneHub only mounts at `/desktop`. `npm run electron:dev` opens `/desktop` automatically; in a browser you must go there yourself. The web-only path may also have rendering or feature gaps — prefer `npm run electron:dev`.
 
-## Documentation
+<details>
+<summary>Offline notes</summary>
 
-Detailed documents are in `docs/README.md`, including:
+- No online account or publish dependencies; app data stays in local storage.
+- Custom background URLs: `https`, `blob`, and `data` only.
+- If badge assets are missing after clone: `npm run badges:sync-assets`
 
-- Project overview
-- Architecture
-- Theme system
-- i18n
-- Component development guide
-- Deployment and maintenance guide
+</details>
 
-## Contributing
+## Screenshot Gallery
 
-Issues and pull requests are welcome.
+Different themes and backgrounds you can build with ZoneHub:
 
-Recommended process:
+![Theme gallery](public/images/gallery-themes.png)
 
-1. Fork this repository.
-2. Create a feature branch.
-3. Run `npm run lint` and ensure build passes.
-4. Open a PR describing motivation and test results.
+## Tech Stack
 
-## CI Workflows
-
-- `electron-package-windows.yml` - build Windows Electron package in CI.
-- `electron-release-on-tag.yml` - publish Electron release artifacts on tag.
-
-Git hooks:
-
-- `npm install` installs Husky and enables pre-commit lint.
-- `npm run install:no-steam` uses `--ignore-scripts` and skips hook installation.
+Vite · React 19 · TypeScript · Tailwind CSS · React Router · i18next · Electron
 
 ## License
 
-This project is licensed under the GNU Affero General Public License v3.0 only.
+This project is licensed under the **GNU Affero General Public License v3.0 only** (`AGPL-3.0-only`). See [LICENSE](LICENSE).
 
-- SPDX identifier: `AGPL-3.0-only`
-- Full text: `LICENSE`
+## Acknowledgments
+
+- Sponsor: [朏朏Moonek0](https://steamcommunity.com/profiles/76561198933108580/)
+- Community: [Discord](https://discord.gg/qpunvXZTvA)
+- Support development: [Afdian](https://afdian.com/a/kuroiuz)
+
+## Feedback & Contributing
+
+- Bug reports and feature requests: [GitHub Issues](https://github.com/Tnekow/zonehub/issues)
+- Contributions welcome: fork → branch → `npm run lint` → open a PR with motivation and test notes.
 
 ## Disclaimer
 

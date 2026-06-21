@@ -16,7 +16,7 @@
     "electron:dev": "node ./scripts/electron-dev.cjs",
     "electron:dev:main": "cross-env NODE_ENV=development ELECTRON_DEBUG=true electron ./electron/main/main.cjs",
     "electron:prepare-icons": "node ./scripts/generate-electron-icons.cjs",
-    "electron:build": "npm run build:electron && npm run electron:prepare-icons && electron-builder",
+    "electron:build": "npm run build:electron && npm run electron:prepare-icons && electron-builder --publish never",
     "electron:rebuild": "electron-rebuild",
     "prepare": "husky",
     "lint": "eslint .",
@@ -79,6 +79,7 @@
   },
   "build": {
     "productName": "ZoneHub",
+    "publish": null,
     "asar": true,
     "icon": "build/icon.png",
     "afterPack": "./scripts/electron-after-pack.cjs",

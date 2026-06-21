@@ -30,6 +30,9 @@ jobs:
           cache: npm
 
       - name: Install dependencies
+        env:
+          HUSKY: "0"
+          CSC_IDENTITY_AUTO_DISCOVERY: "false"
         run: npm ci
 
       - name: Build and package
