@@ -56,9 +56,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # electron-builder --publish never (in package.json) — Release upload is done by action-gh-release below, not electron-builder.
+      # Checkout uses the tagged commit, so do not rely on that commit's package.json scripts.
+      # On CI + tag, electron-builder defaults to publishing and requires GH_TOKEN.
+      # Release upload is handled by action-gh-release below.
       - name: Build and package
-        run: npm run electron:build
+        run: |
+          npm run build:electron
+          npm run electron:prepare-icons
+          npx electron-builder --publish never
 
       - name: Verify installer artifact
         shell: bash

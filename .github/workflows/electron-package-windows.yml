@@ -35,8 +35,12 @@ jobs:
           CSC_IDENTITY_AUTO_DISCOVERY: "false"
         run: npm ci
 
+      # Keep --publish never in the workflow so tag/ref checkouts cannot auto-publish.
       - name: Build and package
-        run: npm run electron:build
+        run: |
+          npm run build:electron
+          npm run electron:prepare-icons
+          npx electron-builder --publish never
 
       - name: Upload installer
         uses: actions/upload-artifact@v4
